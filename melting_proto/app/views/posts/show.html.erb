@@ -15,7 +15,19 @@
   <%= @post.content %>
 </p>
 
+<p>
+  - <%= @post.likes.size %> degrees
+  <!-- like button-->
+  <% if current_user.is_like?(@post) %>
+     <%= link_to "Cancel", post_like_path(@post), method: "post" %>
+  <% else %>
+    <%= link_to "Freeze", post_like_path(@post), method: "post" %>
+  <% end %>
+
 <%= render "comments/widget", commentable: @post %>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<%if current_user.id == @post.user_id %>
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<% end %>
 <%= link_to 'Back', posts_path %>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'posts#index'
+
   resources :posts do
+    post "/like", to: "likes#like_toggle"
     resources :comments, except: [:index, :new, :show] do
         member do
           get :reply
