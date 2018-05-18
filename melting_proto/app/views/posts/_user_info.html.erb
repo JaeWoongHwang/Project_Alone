@@ -1,0 +1,9 @@
+<div class="my_info">
+  <% if user_signed_in?%>
+    <h3>my info</h3>
+    <p>email : <%= current_user.email%> | posts count: <%= current_user.posts.size %></p>
+    <p>follower: <%= current_user.followers.length %> | following: <%= current_user.followings.length %></p>
+  <% else %>
+    <p>Welcome to melting</p>
+  <% end %>
+</div>

@@ -1,42 +1,29 @@
 <p id="notice"><%= notice %></p>
-<!-- follow function -->
-<% if user_signed_in? && current_user != @post.user %>
-  <% if current_user.followings.include?(@post.user) %>
-    <%= form_tag follow_path(@post.user.id), method: :delete, class: "right" do %>
-      <button class="btn">Unfollow</button>
-    <% end %>
-  <% else %>
-    <%= form_tag follows_path, method: :post, class: "right" do %>
-      <input type="hidden" name="followed_id" value="<%=@post.user.id%>">
-      <button class="btn">Follow</button>
-    <% end %>
-  <% end %>
-<% end %>
+<%= render 'follow', post: @post %>
 
-<p>
+<div>
   <strong>User:</strong>
   <%= @post.user.email %>
-</p>
-
-<p>
+</div>
+<br />
+<div>
   <strong>Title:</strong>
   <%= @post.title %>
-</p>
-
-<p>
+</div>
+<br />
+<div>
   <strong>Content:</strong>
   <%= @post.content %>
-</p>
-
-<p>
-  - <%= @post.likes.size %> degrees
-  <!-- like button-->
-  <% if current_user.is_like?(@post) %>
-     <%= link_to "Cancel", post_like_path(@post), method: "post" %>
-  <% else %>
-    <%= link_to "Freeze", post_like_path(@post), method: "post" %>
+</div>
+<br />
+<div>
+  <%if @post.image.url %>
+    <img src="<%=@post.image.url%>">
   <% end %>
+</div>
 
+<%= render 'like', post: @post %>
+<br />
 <%= render "comments/widget", commentable: @post %>
 
 <%if current_user.id == @post.user_id %>

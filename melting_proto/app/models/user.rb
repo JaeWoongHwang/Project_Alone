@@ -14,6 +14,9 @@ class User < ApplicationRecord
   # 내가 팔로잉 한 유저 가져오기
   has_many :following_relations, foreign_key: "follower_id", class_name: "Follow"
   has_many :followings, through: :following_relations, source: :followed
+  # CarrierWave
+  mount_uploader :avatar, AvatarUploader
+
   # Check like
   def is_like?(post)
     Like.find_by(user_id: self.id, post_id: post.id).present?

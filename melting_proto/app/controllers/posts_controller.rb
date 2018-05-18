@@ -25,6 +25,9 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
+    # @post = Post.new(user_id: current_user.id,
+    #                  content: params[:content],
+    #                  image: params[:image])
     # Amended Code
     @post.user = current_user
 

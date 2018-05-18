@@ -1,0 +1,13 @@
+<!-- follow function -->
+<% if user_signed_in? && current_user != @post.user %>
+  <% if current_user.followings.include?(@post.user) %>
+    <%= form_tag follow_path(@post.user.id), method: :delete, class: "right" do %>
+      <button class="btn">Unfollow</button>
+    <% end %>
+  <% else %>
+    <%= form_tag follows_path, method: :post, class: "right" do %>
+      <input type="hidden" name="followed_id" value="<%=@post.user.id%>">
+      <button class="btn">Follow</button>
+    <% end %>
+  <% end %>
+<% end %>

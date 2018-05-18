@@ -1,0 +1,9 @@
+<div>
+  - <%= @post.likes.size %> degrees
+  <!-- like button-->
+  <% if current_user.is_like?(@post) %>
+     <%= link_to "Cancel", post_like_path(@post), method: "post" %>
+  <% else %>
+    <%= link_to "Freeze", post_like_path(@post), method: "post" %>
+  <% end %>
+</div>
