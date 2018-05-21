@@ -1,15 +1,29 @@
-<%= simple_form_for(@post) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Melting Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-  <div class="form-inputs">
-    <%= f.association :user %>
-    <%= f.input :title %>
-    <%= f.input :content %>
-    <%= file_field_tag :image %>
-  </div>
+  <body class="">
+    <%= simple_form_for(@post) do |f| %>
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+      <div class="form-inputs">
+        <%= f.association :user %>
+        <%= f.input :title %>
+        <%= f.input :content %>
+        <%= file_field_tag :image %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit %>
+      </div>
+    <% end %>
+
+  </body>
+</html>

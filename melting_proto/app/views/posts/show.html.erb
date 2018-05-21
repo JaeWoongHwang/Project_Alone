@@ -1,33 +1,52 @@
-<p id="notice"><%= notice %></p>
-<%= render 'follow', post: @post %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Melting Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-<div>
-  <strong>User:</strong>
-  <%= @post.user.email %>
-</div>
-<br />
-<div>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</div>
-<br />
-<div>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</div>
-<br />
-<div>
-  <%if @post.image.url %>
-    <img src="<%=@post.image.url%>">
-  <% end %>
-</div>
+  <body>
+    <p id="notice"><%= notice %></p>
+    <!-- Wrapper -->
+			<div id="wrapper">
 
-<%= render 'like', post: @post %>
-<br />
-<%= render "comments/widget", commentable: @post %>
-
-<%if current_user.id == @post.user_id %>
-  <%= link_to 'Edit', edit_post_path(@post) %> |
-  <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<% end %>
-<%= link_to 'Back', posts_path %>
+    <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+          <article class="post">
+            <header>
+            <%= render 'follow', post: @post %>
+              <div class="title">
+                <!--title -->
+                <h2><a href="#"><%= @post.title %></a></h2>
+                <!--태그 넣을 예정  -->
+                <%#= post.tags %>
+              </div>
+              <div class="meta">
+                <time class="published"><%=@post.created_at%></time>
+                <a href="#" class="author"><span class="name"><%= @post.user.email %></span><img src="images/avatar.jpg" alt="" /></a>
+              </div>
+            </header>
+            <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+            <!--contents  -->
+            <%= @post.content %>
+            <%= render "comments/widget", commentable: @post %>
+            <footer>
+              <ul class="stats">
+                <li><%= link_to 'Back', posts_path %></li>
+                <%if current_user.id == @post.user_id %>
+                  <li><%= link_to 'Edit', edit_post_path(@post) %></li>
+                  <li><%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+                <% end %>
+                <li><a href="#" class="icon fa-heart"><%=@post.likes.size %></a></li>
+                <li><a href="#" class="icon fa-comment"><%=@post.comments.size %></a></li>
+              </ul>
+            </footer>
+          </article>
+      </div>
+    </div>
+  </body>
+</html>

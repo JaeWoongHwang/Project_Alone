@@ -1,0 +1,29 @@
+<!-- Post -->
+  <article class="post">
+    <header>
+      <% @posts.each do |post| %>
+      <div class="title">
+        <h2><a href="#"><%= post.title %></a></h2>
+      </div>
+      <div class="meta">
+        <time class="published"><%=post.created_at%></time>
+        <a href="#" class="author"><span class="name"><%= post.user.email %></span><img src="images/avatar.jpg" alt="" /></a>
+      </div>
+    </header>
+    <!--CarrierWave images  -->
+    <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+    <%= post.content %>
+    <footer>
+      <ul class="actions">
+        <li><a href="/posts/show/#{post.id}" class="button big">Continue Reading</a></li>
+      </ul>
+      <ul class="stats">
+      <% if user_signed_in? && current_user == post.user %>
+        <li><%= link_to 'Edit', edit_post_path(post) %></li>
+        <li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <li><%= post.likes.size%></li>
+        <% end %>
+      </ul>
+    </footer>
+  </article>
+  <% end %>

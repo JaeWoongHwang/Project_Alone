@@ -3,48 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Melting Home</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
   <body>
     <p id="notice"><%= notice %></p>
-    <div class="user_function">
-      <%= render "posts/user_function" %>
-    </div>
-    <br />
-      <%= render 'user_info', post: @post %>
-    <hr />
-    <h1>Posts</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>User</th>
-          <th>Title</th>
-          <th>Content</th>
-          <th>Like</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
+    <!-- Wrapper -->
+			<div id="wrapper">
 
-      <tbody>
+    <!-- Main -->
+      <div id="main">
+
+        <!-- Post -->
         <% @posts.each do |post| %>
-          <tr>
-            <td><%= post.user.email %></td>
-            <td><%= post.title %></td>
-            <td><%= post.content %></td>
-            <td><%= post.likes.size %></td>
-            <td><%= link_to 'Show', post %></td>
-          <% if user_signed_in? && current_user == post.user %>
-            <td><%= link_to 'Edit', edit_post_path(post) %></td>
-            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% end %>
-          </tr>
+          <article class="post">
+            <header>
+              <div class="title">
+                <!--title -->
+                <h2><a href="#"><%= post.title %></a></h2>
+                <!--태그 넣을 예정  -->
+                <%#= post.tags %>
+              </div>
+              <div class="meta">
+                <time class="published"><%=post.created_at%></time>
+                <a href="#" class="author"><span class="name"><%= post.user.email %></span><img src="images/avatar.jpg" alt="" /></a>
+              </div>
+            </header>
+            <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+            <!--contents  -->
+            <%= post.content %>
+            <footer>
+              <ul class="stats">
+                <li><%= link_to 'Show more', post %></li>
+                <li><a href="#" class="icon fa-heart"><%=post.likes.size %></a></li>
+                <li><a href="#" class="icon fa-comment"><%=post.comments.size %></a></li>
+              </ul>
+            </footer>
+          </article>
         <% end %>
-      </tbody>
-    </table>
-    <br>
-    <%= link_to 'New Post', new_post_path %>
+      </div>
+    </div>
   </body>
 </html>
