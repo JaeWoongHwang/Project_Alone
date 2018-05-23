@@ -1,0 +1,31 @@
+<!-- Logo -->
+  <a href="/posts" class="logo">
+    <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+  </a>
+
+<!-- Nav -->
+  <nav>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+    </ul>
+  </nav>
+
+</div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<h2>Menu</h2>
+<ul>
+  <% unless current_page?(root_path) %>
+    <li><%= link_to 'Home', root_path %></li>
+  <% end %>
+  <% if user_signed_in? %>
+    <li><%= link_to "Profile", edit_user_registration_path%></li>
+    <li><%= link_to 'Log out', destroy_user_session_path, method: :delete, data: {confirm:"Are you sure?"}%></li>
+  <% else %>
+    <li><%= link_to "Log in", new_user_session_path unless current_page?(new_user_session_path) %></li>
+    <li><%= link_to "Sign up", new_user_registration_path unless current_page?(new_user_registration_path) %></li>
+  <% end %>
+</ul>
+</nav>

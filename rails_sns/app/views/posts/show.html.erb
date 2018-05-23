@@ -1,19 +1,12 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>User:</strong>
-  <%= @post.user %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<!-- Main -->
+	<div id="main">
+		<div class="inner">
+			<h1><%= @post.title %></h1>
+			<p><%= @post.user.email %></p>
+			<span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
+			<p><%= @post.content %></p>
+		</div>
+	</div>
+	<%= link_to 'Edit', edit_post_path(@post) %> |
+	<%= link_to 'Back', posts_path %>
