@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<!-- Main -->
+<div id="main">
+<!-- Post -->
+  <article class="post">
+    <header>
+      <div class="title">
+        <h2><a href="#"><%=@post.title%></a></h2>
+        <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+      </div>
+      <div class="meta">
+        <time class="published"><%=@post.created_at%></time>
+        <a href="#" class="author"><span class="name"><%=@post.user.email%></span><img src="/images/avatar.jpg" alt="" /></a>
+      </div>
+    </header>
+    <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
+    <p><%= @post.content %></p>
+    <footer>
+      <ul class="stats">
+        <li><%= link_to 'Back', posts_path %></li>
+        <% if current_user.id == @post.user_id %>
+          <li><%= link_to 'Edit', edit_post_path(@post) %></li>
+        <% end %>
+      </ul>
+    </footer>
+  </article>
