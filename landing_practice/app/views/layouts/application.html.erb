@@ -5,6 +5,7 @@
     <title>Home Page 14 | | Unify - Responsive Website Template</title>
 
     <%= csrf_meta_tags %>
+
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,77 +13,78 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../favicon.ico">
     <!-- Google Fonts -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- CSS Global Compulsory -->
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
     <!-- CSS Global Icons -->
-    <link rel="stylesheet" href="../../assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="../../assets/vendor/icon-etlinefont/style.css">
-    <link rel="stylesheet" href="../../assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../../assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../../assets/vendor/animate.css">
-    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="../../assets/vendor/revolution-slider/revolution/css/settings.css">
-    <link rel="stylesheet" href="../../assets/vendor/revolution-slider/revolution/css/layers.css">
-    <link rel="stylesheet" href="../../assets/vendor/revolution-slider/revolution/css/navigation.css">
+    <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/stylesheets/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/icon-line-pro/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/icon-hs/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/animate.css">
+    <link rel="stylesheet" href="assets/stylesheets/hs.megamenu.css">
+    <link rel="stylesheet" href="assets/stylesheets/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/stylesheets/settings.css">
+    <link rel="stylesheet" href="assets/stylesheets/layers.css">
+    <link rel="stylesheet" href="assets/stylesheets/navigation.css">
 
     <!-- CSS Unify -->
-    <link rel="stylesheet" href="../../assets/css/unify-core.css">
-    <link rel="stylesheet" href="../../assets/css/unify-components.css">
-    <link rel="stylesheet" href="../../assets/css/unify-globals.css">
+    <link rel="stylesheet" href="assets/stylesheets/unify-core.css">
+    <link rel="stylesheet" href="assets/stylesheets/unify-components.css">
+    <link rel="stylesheet" href="assets/stylesheets/unify-globals.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="assets/stylesheets/custom.css">
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
     <%= render partial: 'shared/header' %>
     <%= yield %>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
     <!-- JS Global Compulsory -->
-    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
-    <script src="../../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-    <script src="../../assets/vendor/popper.min.js"></script>
-    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/javascripts/jquery.min.js"></script>
+    <script src="assets/javascripts/jquery-migrate.min.js"></script>
+    <script src="assets/javascripts/popper.min.js"></script>
+    <script src="assets/javascripts/bootstrap.min.js"></script>
 
 
     <!-- JS Implementing Plugins -->
-    <script src="../../assets/vendor/appear.js"></script>
-    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="assets/javascripts/appear.js"></script>
+    <script src="assets/javascripts/hs.megamenu.js"></script>
 
     <!-- JS Revolution Slider -->
-    <script src="../../assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/javascripts/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/javascripts/jquery.themepunch.revolution.min.js"></script>
 
-    <script src="../../assets/vendor/revolution-slider/revolution-addons/slicey/js/revolution.addon.slicey.min.js"></script>
+    <script src="assets/javascripts/revolution.addon.slicey.min.js"></script>
 
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="../../assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.actions.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.carousel.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.migration.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.navigation.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.parallax.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/javascripts/revolution.extension.video.min.js"></script>
 
     <!-- JS Unify -->
-    <script src="../../assets/js/hs.core.js"></script>
-    <script src="../../assets/js/components/hs.header.js"></script>
-    <script src="../../assets/js/helpers/hs.hamburgers.js"></script>
-    <script src="../../assets/js/components/hs.tabs.js"></script>
-    <script src="../../assets/js/components/hs.onscroll-animation.js"></script>
-    <script src="../../assets/js/components/hs.go-to.js"></script>
+    <script src="assets/javascripts/hs.core.js"></script>
+    <script src="assets/javascripts/hs.header.js"></script>
+    <script src="assets/javascripts/hs.hamburgers.js"></script>
+    <script src="assets/javascripts/hs.tabs.js"></script>
+    <script src="assets/javascripts/hs.onscroll-animation.js"></script>
+    <script src="assets/javascripts/hs.go-to.js"></script>
 
     <!-- JS Customization -->
-    <script src="../../assets/js/custom.js"></script>
+    <script src="assets/javascripts/custom.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
