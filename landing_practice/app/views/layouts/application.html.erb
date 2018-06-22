@@ -5,7 +5,7 @@
     <title>Landing Page</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,7 @@
     <!-- Tab logo -->
     <link rel="shortcut icon" href="../../assets/logo1.png">
     <!-- Google Fonts -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="../../assets/bootstrap.min.css">
@@ -43,8 +44,7 @@
   </head>
 
   <body>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render partial: 'shared/style' %>
+    <%= render 'shared/style' %>
     <%= render partial: 'shared/header' %>
     <%= yield %>
 
