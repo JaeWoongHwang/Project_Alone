@@ -1,5 +1,4 @@
 <h2>Sign up</h2>
-
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
@@ -7,9 +6,10 @@
     <%= f.input :email, required: true, autofocus: true %>
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
-    <%= f.input :nickname, required: true %>
-    <%= f.input :age, required: true%>
-    <%= f.label :nationality %>
+    <%= f.input :nickname, required: true, autofocus: true %>
+    <%= f.label :age %>
+    <%= f.text_field :age, autofocus: true%>
+    <%= f.label "nationality", required: true %>
     <%= f.select(:nationality_type, options_for_select([['KOREA', 'KOREA'], ['US', 'US'], ['CHINA', 'CHINA'], ['JAPAN', 'JAPAN']]), {include_blank: true}) %>
     <label class = "radio button">Male
       <%= f.radio_button :gender, 'Male', checked: true %>

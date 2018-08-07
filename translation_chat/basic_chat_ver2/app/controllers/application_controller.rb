@@ -1,7 +1,20 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+    protected
+
     def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname, :nationality, :age, :gender, :admin])
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname, :nationality_type, :age, :gender, :admin])
+    end
+
+    def authenticate
+      redirect_to new_user_session_path unless user_signed_in?
+    end
+
+    def authenticate_admin
+      unless current_user.admin
+        flash[:alert] = 'You are not an admin'
+        redirect_to '/'
+      end
     end
 end

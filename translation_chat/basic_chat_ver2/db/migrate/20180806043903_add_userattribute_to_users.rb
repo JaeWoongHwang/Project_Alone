@@ -4,6 +4,6 @@ class AddUserattributeToUsers < ActiveRecord::Migration[5.2]
     add_column :users, :age, :integer
     add_column :users, :nationality, :string
     add_column :users, :gender, :string
-    add_column :users, :admin, :boolean
+    add_column :users, :admin, :boolean, default: false
   end
 end
