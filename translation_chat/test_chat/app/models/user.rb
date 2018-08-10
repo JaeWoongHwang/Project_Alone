@@ -11,4 +11,7 @@ class User < ApplicationRecord
   format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}   # uniqueness(이메일소문자)
 
   has_many :posts
+  has_many :likes
+  has_many :liked_posts, through: :likes, source: :post
+  
 end

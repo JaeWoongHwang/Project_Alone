@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
 
   def authenticate_admin
     unless current_user.admin
-      flash[:alert] = 'You are not an admin'
       redirect_to '/'
     end
   end
