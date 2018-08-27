@@ -1,24 +1,11 @@
-# README
+### Company Page Document
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Beyond the Dream
+- Overall
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Nav Elements
+- Home
+- Service
+- Team
+- Press
+- Contact
