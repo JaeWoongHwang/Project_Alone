@@ -10,13 +10,7 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <%= link_to 'Home', root_path%>
-      <%= link_to 'Service', homes_service_path%>
-      <%= link_to 'Team', homes_team_path%>
-      <%= link_to 'Press', homes_press_path%>
-      <%= link_to 'Contact', homes_contact_path%>
-    </div>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
