@@ -1,15 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, Dimensions, Platform, TextInput, ScrollView } from 'react-native';
+import {AppLoading} from "expo";
 import ToDo from "./ToDo";
+import uuidv1 from "uuid/v1";
 
 const {height, width} = Dimensions.get("window");
 
 export default class App extends React.Component {
   state = {
-    newToDo: ""
+    newToDo: "",
+    loadedToDos: false
+  };
+  componentDidMount = () => {
+    this._loadToDos();
   };
   render() {
-    const {newToDo} = this.state;
+    const {newToDo, loadedToDos} = this.state;
+    if(!loadedToDos){
+      return <AppLoading/>;
+    }
     return (
       <View style={styles.container}>
         <StatusBar barstyle="light-content"/>
@@ -21,11 +30,12 @@ export default class App extends React.Component {
           placeholderTextColor= {"#999"}
           value={newToDo}
           onChangeText={this._controlNewToDo}
-          returnKeyType={"Done"}
+          returnKeyType={"done"}
           autoCorrect={false}
+          onSubmitEdting={this._addToDo}
           />
           <ScrollView contentContainerStyle={styles.toDos}>
-            <ToDo text={"Hello, I am to do"}/>
+            <ToDo text={"Hello, I am a to do"}/>
           </ScrollView>
         </View>
       </View>
@@ -35,6 +45,36 @@ export default class App extends React.Component {
     this.setState({
       newToDo: text
     });
+  };
+  _loadToDos = () => {
+    this.setState({
+      loadedToDos: true
+    });
+  };
+  _addToDo = () => {
+      const {newToDo} = this.state;
+      if(newToDo !== ""){
+        this.setState(prevState=> {
+          const ID = uuidv1();
+          const newToDoObject ={
+            [ID]: {
+              id: ID,
+              isCompleted: false,
+              text: newToDo,
+              createdAt: Date.now()
+            }
+          };
+          const newState={
+            ...prevState,
+            newToDo: "",
+            toDos: {
+              ...prevState.toDos,
+              ...newToDoObject
+            }
+          }
+          return {...newState};
+        });
+      }
   };
 }
 
@@ -47,7 +87,7 @@ const styles = StyleSheet.create({
   title: {
     color: "white",
     fontSize: 30,
-    fontWeight:"200",
+    fontWeight:"300",
     marginTop: 50,
     marginBottom: 30
   },

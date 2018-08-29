@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "todo-app",
+    "name": "todo-app-ver2",
     "description": "This project is really great.",
-    "slug": "todo-app",
+    "slug": "todo-app-ver2",
     "privacy": "public",
     "sdkVersion": "29.0.0",
     "platforms": ["ios", "android"],
