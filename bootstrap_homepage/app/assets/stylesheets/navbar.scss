@@ -1,0 +1,15 @@
+.nav{
+  background-color: trensparent;
+}
+.navbar-nav{
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.navbar-nav a{
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+}
