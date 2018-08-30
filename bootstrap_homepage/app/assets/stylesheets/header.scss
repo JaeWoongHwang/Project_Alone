@@ -1,0 +1,61 @@
+#main-header{
+  position: absolute;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  pointer-events: none;
+  display: block;
+}
+.header-container{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  pointer-events: auto;
+}
+.logo{
+  flex-shrink: 0;
+  position: relative;
+  z-index: 3;
+  width: 290px;
+  margin-right: auto;
+  line-height: 0;
+  text-align: left;
+}
+.drawer{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.navigation-container{
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.navigation-container a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: #000;
+  font-weight: 500;
+  font-family: verdana, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.tool-container{
+  width: 350px;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  text-align: right;
+}
