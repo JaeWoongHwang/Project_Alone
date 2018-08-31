@@ -1,17 +1,46 @@
+<!--Index Layout  -->
+<div id="navbar">
+  <a href="#home">Home</a>
+  <a href="#service">Service</a>
+  <a href="#team">Team</a>
+  <a href="#contact">Contact</a>
+</div>
 <div id="fullpage">
-  <div class="section intro-container">intro section</div>
-  <div class="section service-container">service section</div>
-  <div class="section team-container">team section</div>
-  <div class="section contact-container">contact section</div>
+  <div class="section intro-container" data-anchor="home">intro section</div>
+  <div class="section service-container" data-anchor="service">service section</div>
+  <div class="section team-container" data-anchor="team">team section</div>
+  <div class="section contact-container" data-anchor="contact">contact section</div>
 </div>
 
 <script>
-  new fullpage('#fullpage', {
-  	//options here
-  	autoScrolling:true,
-  	scrollHorizontally: true
-  });
+  var xhttp = new XMLHttpRequest();
 
-  //methods
-  fullpage_api.setAllowScrolling(true);
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      new fullpage('#fullpage', {
+      	//Options
+      	autoScrolling:true,
+      	scrollHorizontally: true,
+        loopBottom: true,
+        licenseKey: xhttp.responseText
+      });
+      fullpage_api.setAllowScrolling(true);
+    }
+  };
+
+  function getCSRFToken() {
+   var metas = document.getElementsByTagName('meta');
+
+   for (var i=0; i<metas.length; i++) {
+      if (metas[i].getAttribute("name") == "csrf-token") {
+         return metas[i].getAttribute("content");
+      }
+   }
+
+    return "";
+  }
+  xhttp.open("POST", '/home/get_fullpage',  true);
+  xhttp.setRequestHeader("X-CSRF-Token", getCSRFToken());
+  xhttp.send();
+
 </script>
