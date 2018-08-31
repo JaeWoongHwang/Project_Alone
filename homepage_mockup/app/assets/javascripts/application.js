@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require fullpage.extensions.min
 //= require fullpage
 //= require turbolinks
 //= require_tree .

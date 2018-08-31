@@ -14,7 +14,7 @@
   text-decoration: none;
   margin-right: 40px;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 400;
   color: #171718;
   font-family: verdana, sans-serif;
 }
@@ -23,8 +23,10 @@
   height: 100%;
   background-color: trensparent;
   font-size: 40px;
-  color: #000;
+  color: #fff;
   text-align: center;
+  background-image: url(background_image.jpg);
+  background-size: cover;
 }
 .service-container{
   width: 100%;

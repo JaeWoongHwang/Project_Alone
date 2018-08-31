@@ -6,12 +6,21 @@
   <a href="#contact">Contact</a>
 </div>
 <div id="fullpage">
-  <div class="section intro-container" data-anchor="home">intro section</div>
-  <div class="section service-container" data-anchor="service">service section</div>
-  <div class="section team-container" data-anchor="team">team section</div>
-  <div class="section contact-container" data-anchor="contact">contact section</div>
+  <div class="section intro-container" data-anchor="home">
+    <%= render 'home/overall' %>
+  </div>
+  <div class="section service-container" data-anchor="service">
+    <%= render 'home/service' %>
+  </div>
+  <div class="section team-container" data-anchor="team">
+    <%= render 'home/team' %>
+  </div>
+  <div class="section contact-container" data-anchor="contact">
+    <%= render 'home/contact' %>
+  </div>
 </div>
 
+<!--Functions -->
 <script>
   var xhttp = new XMLHttpRequest();
 
@@ -22,6 +31,7 @@
       	autoScrolling:true,
       	scrollHorizontally: true,
         loopBottom: true,
+        navigation: true,
         licenseKey: xhttp.responseText
       });
       fullpage_api.setAllowScrolling(true);
@@ -36,9 +46,9 @@
          return metas[i].getAttribute("content");
       }
    }
-
     return "";
   }
+
   xhttp.open("POST", '/home/get_fullpage',  true);
   xhttp.setRequestHeader("X-CSRF-Token", getCSRFToken());
   xhttp.send();
