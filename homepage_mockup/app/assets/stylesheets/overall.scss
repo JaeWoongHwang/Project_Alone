@@ -1,13 +1,13 @@
-.overall-wrapper{
+.overall-container{
   position: relative;
   display: flex;
-  height: 105vh;
+  height: 100%;
   max-width: 100%;
-  max-height: 950px;
   margin-bottom: 24px;
   color: #171718;
-  background-image: url(background_image.jpg);
-  background-size: cover;
+}
+.overall-wrapper{
+
 }
 .overall-wrapper h2{
   font-size: 2em;
@@ -55,4 +55,12 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+}
+.overall-background{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.ovserall-background .switch{
+  visibility: hidden;
 }

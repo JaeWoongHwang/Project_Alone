@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery
 //= require activestorage
-//= require fullpage.extensions.min
-//= require fullpage
+//= require fullpage.extensions.min.js
+//= require fullpage.js
 //= require turbolinks
 //= require_tree .

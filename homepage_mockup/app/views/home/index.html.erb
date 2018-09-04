@@ -19,50 +19,15 @@
 <!--Index Layout  -->
 <div id="fullpage">
   <div class="section intro-container" data-anchor="home">
-    <%= render 'home/overall' %>
+    <%= render 'shared/overall' %>
   </div>
   <div class="section service-container" data-anchor="service">
-    <%= render 'home/service' %>
+    <%= render 'shared/service' %>
   </div>
   <div class="section team-container" data-anchor="team">
-    <%= render 'home/team' %>
+    <%= render 'shared/team' %>
   </div>
   <div class="section contact-container" data-anchor="contact">
-    <%= render 'home/contact' %>
+    <%= render 'shared/contact' %>
   </div>
 </div>
-
-<!--Functions -->
-<script>
-  var xhttp = new XMLHttpRequest();
-
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      new fullpage('#fullpage', {
-      	//Options
-      	autoScrolling:true,
-      	scrollHorizontally: true,
-        loopBottom: true,
-        navigation: true,
-        licenseKey: xhttp.responseText
-      });
-      fullpage_api.setAllowScrolling(true);
-    }
-  };
-
-  function getCSRFToken() {
-   var metas = document.getElementsByTagName('meta');
-
-   for (var i=0; i<metas.length; i++) {
-      if (metas[i].getAttribute("name") == "csrf-token") {
-         return metas[i].getAttribute("content");
-      }
-   }
-    return "";
-  }
-
-  xhttp.open("POST", '/home/get_fullpage',  true);
-  xhttp.setRequestHeader("X-CSRF-Token", getCSRFToken());
-  xhttp.send();
-
-</script>
