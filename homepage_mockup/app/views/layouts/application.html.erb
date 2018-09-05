@@ -13,67 +13,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!--Functions -->
-    <script>
-      var xhttp = new XMLHttpRequest();
 
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          new fullpage('#fullpage', {
-          	//Options
-          	autoScrolling:true,
-          	scrollHorizontally: true,
-            loopBottom: true,
-            navigation: true,
-            licenseKey: xhttp.responseText
-          });
-          fullpage_api.setAllowScrolling(true);
-        }
-      };
-
-      function getCSRFToken() {
-       var metas = document.getElementsByTagName('meta');
-
-       for (var i=0; i<metas.length; i++) {
-          if (metas[i].getAttribute("name") == "csrf-token") {
-             return metas[i].getAttribute("content");
-          }
-       }
-        return "";
-      }
-
-      xhttp.open("POST", '/home/get_fullpage',  true);
-      xhttp.setRequestHeader("X-CSRF-Token", getCSRFToken());
-      xhttp.send();
-
-    </script>
-
-    <!--JQuery-->
-
-    <script>
-      $(function(){
-        var $setElem = $('.switch'),
-        pcName = '_pc',
-        spName = '_sp',
-        replaceWidth = 641;
-
-        $setElem.each(function(){
-            var $this = $(this);
-            function imgSize(){
-                if(window.innerWidth > replaceWidth) {
-                    $this.attr('src',$this.attr('src').replace(spName,pcName)).css({visibility:'visible'});
-                } else {
-                    $this.attr('src',$this.attr('src').replace(pcName,spName)).css({visibility:'visible'});
-                }
-            }
-            $(window).resize(function(){imgSize();});
-            imgSize();
-        });
-      });
-    </script>
+    <%= render 'shared/javascripts' %>
   </head>
 
-  <body>
+  <body onload="initialize()">
     <%= yield %>
   </body>
 </html>

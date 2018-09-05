@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Map Test</title>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ko"></script>
+    <script>
+      function initialize() {
+      var myLatlng = new google.maps.LatLng(126.884341, 37.473453); // y, x좌표값
+      var mapOptions = {
+            zoom: 16,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+      var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: "비욘드더드림"
+      });
+      var infowindow = new google.maps.InfoWindow(
+              {
+                content: "<h1>비욘드더드림</h1>",
+                maxWidth: 300
+              }
+      );
+
+      google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+      });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas" style="width:600px; height:400px;"></div>
+  </body>
+</html>

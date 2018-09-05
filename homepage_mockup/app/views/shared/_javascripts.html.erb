@@ -1,0 +1,96 @@
+<!--Functions -->
+<script>
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      new fullpage('#fullpage', {
+        //Options
+        autoScrolling:true,
+        scrollHorizontally: true,
+        loopBottom: true,
+        navigation: true,
+        licenseKey: xhttp.responseText
+      });
+      fullpage_api.setAllowScrolling(true);
+    }
+  };
+
+  function getCSRFToken() {
+   var metas = document.getElementsByTagName('meta');
+
+   for (var i=0; i<metas.length; i++) {
+      if (metas[i].getAttribute("name") == "csrf-token") {
+         return metas[i].getAttribute("content");
+      }
+   }
+    return "";
+  }
+  xhttp.open("POST", '/home/get_fullpage',  true);
+  xhttp.setRequestHeader("X-CSRF-Token", getCSRFToken());
+  xhttp.send();
+
+</script>
+
+<!--Switch Image JQuery-->
+<script>
+  $(function(){
+    var $setElem = $('.switch'),
+    pcName = '_pc',
+    spName = '_sp',
+    replaceWidth = 641;
+
+    $setElem.each(function(){
+        var $this = $(this);
+        function imgSize(){
+            if(window.innerWidth > replaceWidth) {
+                $this.attr('src',$this.attr('src').replace(spName,pcName)).css({visibility:'visible'});
+            } else {
+                $this.attr('src',$this.attr('src').replace(pcName,spName)).css({visibility:'visible'});
+            }
+        }
+        $(window).resize(function(){imgSize();});
+        imgSize();
+    });
+  });
+</script>
+
+<!--Google Map API -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_th17xVQyYCR_3XcsSHh9UQJIdfmMFi0"></script> -->
+
+<script>
+    function initialize(){
+      var Y_point			= 37.473201;
+      var X_point			= 126.884277;
+
+      var zoomLevel = 16;
+      var markerTitle = "비욘드더드림(Beyond the Dream)";
+      var markerMaxWidth = 300;
+
+      var contentString = '<div>' + '<h2>비욘드더드림</h2>' + '<p>비욘드더드림 소개 첫줄<br/> + 비욘드더드림 소개 두번째 줄</p>'
+      var myLatlng = new google.maps.LatLng(Y_point, X_point);
+      var mapOptions = {
+                zoom: zoomLevel,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+      var marker = new google.maps.Marker({
+                          position: myLatlng,
+                          map: map,
+                          title: markerTitle
+      });
+      var infowindow = new google.maps.InfoWindow(
+                            {
+                              content: contentString,
+                              maxWidth: markerMaxWidth
+                            }
+      );
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+</script>
