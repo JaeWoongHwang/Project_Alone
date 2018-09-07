@@ -1,0 +1,24 @@
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .overall-text-company p{
+    font-size: 1em;
+  }
+  .overall-text-title p{
+    font-size: 1.6em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_tb.png);
+    background-size: cover;
+  }
+  .service-category-section p{
+    font-size: 1em;
+  }
+  .service-name-section p{
+    font-size: 1.6em;
+  }
+  .service-description-section p{
+    font-size: 1em;
+  }
+}

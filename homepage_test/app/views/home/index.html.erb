@@ -1,0 +1,33 @@
+<!--Navbar-->
+<div id="navbar">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#service">Service</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#team">Team</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<!--Index Layout  -->
+<div id="fullpage">
+  <div class="section overall-container" data-anchor="home">
+    <%= render 'shared/overall' %>
+  </div>
+  <div class="section service-container" data-anchor="service">
+    <%= render 'shared/service' %>
+  </div>
+  <div class="section team-container" data-anchor="team">
+    <%= render 'shared/team' %>
+  </div>
+  <div class="section contact-container" data-anchor="contact">
+    <%= render 'shared/contact' %>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .overall-text-company p{
+    font-size: 1.5em;
+  }
+  .overall-text-title p{
+    font-size: 3em;
+  }
+  .overall-text-content p{
+    font-size: 1.5em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_pc.png);
+    background-size: cover;
+  }
+  .service-category-section p{
+    font-size: 1em;
+  }
+  .service-name-section p{
+    font-size: 3em;
+  }
+  .service-description-section p{
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .overall-text-company p{
+    font-size: 1.5em;
+  }
+  .overall-text-title p{
+    font-size: 3em;
+  }
+  .overall-text-content p{
+    font-size: 1.5em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_pc.png);
+    background-size: cover;
+  }
+  .service-category-section p{
+    font-size: 1em;
+  }
+  .service-name-section p{
+    font-size: 3em;
+    .service-description-section p{
+  }
+    font-size: 1em;
+  }
+}
