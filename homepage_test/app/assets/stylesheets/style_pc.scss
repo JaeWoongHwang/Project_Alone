@@ -1,5 +1,6 @@
 //Standard DeskTop
 @media screen and (min-width: 812px) and (max-width: 1024px) {
+  // Overall Section
   .overall-text-company p{
     font-size: 1.5em;
   }
@@ -13,6 +14,7 @@
     background-image: url(overall_image_pc.png);
     background-size: cover;
   }
+  // Service Section
   .service-category-section p{
     font-size: 1.2em;
   }
@@ -21,10 +23,37 @@
   }
   .service-description-section p{
     font-size: 1em;
+  }
+  // Team Section
+  // Contact Section
+  // Contact Section
+  .contact-content-wrapper{
+    flex-direction: column;
+  }
+  .contact-text-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
+  }
+  .contact-text-title p{
+    font-size: 3em;
+  }
+  .contact-text-description p{
+    font-size: 1.2em;
+  }
+  .contact-empty-block{
+    height: 5%;
+    width: 100%;
+  }
+  .contact-map-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
   }
 }
 
 @media screen and (min-width: 1025px) {
+  // Overall Section
   .overall-text-company p{
     font-size: 1.5em;
   }
@@ -38,6 +67,7 @@
     background-image: url(overall_image_pc.png);
     background-size: cover;
   }
+  // Service Section
   .service-category-section p{
     font-size: 1.2em;
   }
@@ -47,4 +77,6 @@
   .service-description-section p{
     font-size: 1em;
   }
+  // Team Section
+  // Contact Section
 }

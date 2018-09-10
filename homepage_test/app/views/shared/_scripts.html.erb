@@ -6,7 +6,9 @@
     if (this.readyState == 4 && this.status == 200) {
       new fullpage('#fullpage', {
         //Options
-        autoScrolling:true,
+        anchors: ["home", "service", "team", "contact"],
+        menu: "#myMenu",
+        autoScrolling: true,
         scrollHorizontally: true,
         loopBottom: true,
         navigation: true,
@@ -30,27 +32,4 @@
   xhttp.setRequestHeader("X-CSRF-Token", getCSRFToken());
   xhttp.send();
 
-</script>
-
-<!--Switch Image JQuery-->
-<script>
-  $(function(){
-    var $setElem = $('.switch'),
-    pcName = '_pc',
-    spName = '_sp',
-    replaceWidth = 641;
-
-    $setElem.each(function(){
-        var $this = $(this);
-        function imgSize(){
-            if(window.innerWidth > replaceWidth) {
-                $this.attr('src',$this.attr('src').replace(spName,pcName)).css({visibility:'visible'});
-            } else {
-                $this.attr('src',$this.attr('src').replace(pcName,spName)).css({visibility:'visible'});
-            }
-        }
-        $(window).resize(function(){imgSize();});
-        imgSize();
-    });
-  });
 </script>
