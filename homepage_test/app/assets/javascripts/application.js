@@ -13,6 +13,5 @@
 //= require jquery
 //= require activestorage
 //= require fullpage.extensions.min.js
-//= require fullpage.js
 //= require turbolinks
 //= require_tree .

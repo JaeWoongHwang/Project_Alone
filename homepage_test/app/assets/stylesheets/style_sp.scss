@@ -1,3 +1,4 @@
+// Standard Smart Phone
 @media screen and (max-width: 320px) {
   .overall-text-company p{
     font-size: 0.5em;
@@ -20,5 +21,38 @@
   }
   .service-description-section p{
     font-size: 0.3em;
+  }
+}
+// For Iphone X
+@media screen and (min-width: 769px) and (max-width: 812px) {
+  .overall-text-company p{
+    font-size: 1em;
+  }
+  .overall-text-title p{
+    font-size: 2em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_pc.png);
+    background-size: cover;
+  }
+  .service-category-section p{
+    font-size: 0.6em;
+  }
+  .service-name-section p{
+    font-size: 1.5em;
+  }
+  .service-description-section p{
+    font-size: 0.5em;
+  }
+  .fp-controlArrow.fp-prev{
+    margin-top: 0px;
+
+  }
+  .fp-controlArrow.fp-next{
+    margin-top: 0px;
+
   }
 }

@@ -1,4 +1,5 @@
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+//Standard DeskTop
+@media screen and (min-width: 812px) and (max-width: 1024px) {
   .overall-text-company p{
     font-size: 1.5em;
   }
@@ -13,13 +14,13 @@
     background-size: cover;
   }
   .service-category-section p{
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .service-name-section p{
     font-size: 3em;
   }
   .service-description-section p{
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
@@ -38,7 +39,7 @@
     background-size: cover;
   }
   .service-category-section p{
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .service-name-section p{
     font-size: 3em;
