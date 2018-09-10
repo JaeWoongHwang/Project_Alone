@@ -14,6 +14,17 @@
     <div class="contact-empty-block">
     </div>
     <div class="contact-map-block">
+      <div id="map" style="width:100%;height:400px;"></div>
     </div>
   </div>
 </div>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=cpw9RMOfkmb0qIa7Vz23&callback=initMap"></script>
+<script type="text/javascript">
+  var map = null;
+  function initMap() {
+    map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.473219, 126.884288),
+        zoom: 10
+    });
+  }
+</script>
