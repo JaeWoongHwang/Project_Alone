@@ -123,7 +123,7 @@
   }
 }
 
-/* 스마트폰 (가로 ) ----------- */
+/* Smart Phone (가로 ) ----------- */
 @media only screen and (min-device-width: 321px) and (max-device-width: 811px) and (orientation : landscape) {
   // Overall Section
   .overall-text-company p{
@@ -220,7 +220,7 @@
     font-size: 1em;
   }
 }
-/* 아이폰 X 가로 */
+/* iPhoneX (가로 ) ----------- */
 @media only screen and (min-device-width:375px) and (max-device-width: 812px) and (orientation : landscape) {
   // Overall Section
   .overall-text-company p{
@@ -311,22 +311,18 @@
   }
 }
 
-/* 아이폰 X 세로 */
+/* iPhoneX (세로 ) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
-/* 사용자 코드 */
 }
 
-/* 아이폰 6 Plus 가로 및 세로 */
+/* iPhone 6 Plus 가로 및 세로 */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-/* 사용자 코드 */
 }
 
-/* 아이폰 6 Plus 가로 */
+/* iPhone 6 Plus 가로 */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {
-/* 사용자 코드 */
 }
 
-/* 아이폰 6 Plus 세로 */
+/* iPhone6 Plus 세로 */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
-/* 사용자 코드 */
 }

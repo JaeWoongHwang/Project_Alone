@@ -1,61 +1,4 @@
-/* 아이패드 (가로 및 세로) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-}
-
-/* 아이패드 (가로) ----------- */
-@media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
-  // Overall Section
-  .overall-text-company p{
-    font-size: 1.2em;
-  }
-  .overall-text-title p{
-    font-size: 2.5em;
-  }
-  .overall-text-content p{
-    font-size: 1em;
-  }
-  // Service Section
-  .service-name-section p{
-    font-size: 2.5em;
-  }
-  .service-description-section p{
-    font-size: 1.2em;
-  }
-  // Team Section
-  .team-text-block p{
-    font-size: 2.5em;
-  }
-  .team-text-name p{
-    font-size: 1.2em;
-  }
-  .team-text-content p{
-    font-size: 0%;
-    color: trensparent;
-  }
-  .team-introduction-first-section{
-    align-items: baseline;
-  }
-  .team-introduction-block{
-    height: 80%;
-    width: 20%;
-  }
-  .team-introduction-block-last{
-    height: 80%;
-    width: 20%;
-  }
-  .team-introduction-second-section{
-    align-items: baseline;
-  }
-  // Contact Section
-  .contact-text-title p{
-    font-size: 2.5em;
-  }
-  .contact-text-description p{
-    font-size: 1.2em;
-  }
-}
-
-/* 아이패드 (세로) ----------- */
+/* iPad (세로) ----------- */
 @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
   #navbar a{
     font-size: 1em;
@@ -151,8 +94,59 @@
     margin-left: 5em;
   }
 }
-
-/* 아이패드 프로 세로 */
+/* iPad (가로) ----------- */
+@media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+  // Overall Section
+  .overall-text-company p{
+    font-size: 1.2em;
+  }
+  .overall-text-title p{
+    font-size: 2.5em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  // Service Section
+  .service-name-section p{
+    font-size: 2.5em;
+  }
+  .service-description-section p{
+    font-size: 1.2em;
+  }
+  // Team Section
+  .team-text-block p{
+    font-size: 2.5em;
+  }
+  .team-text-name p{
+    font-size: 1.2em;
+  }
+  .team-text-content p{
+    font-size: 0%;
+    color: trensparent;
+  }
+  .team-introduction-first-section{
+    align-items: baseline;
+  }
+  .team-introduction-block{
+    height: 80%;
+    width: 20%;
+  }
+  .team-introduction-block-last{
+    height: 80%;
+    width: 20%;
+  }
+  .team-introduction-second-section{
+    align-items: baseline;
+  }
+  // Contact Section
+  .contact-text-title p{
+    font-size: 2.5em;
+  }
+  .contact-text-description p{
+    font-size: 1.2em;
+  }
+}
+/* iPad Pro(세로) ----------- */
 @media screen and (device-width: 1024px) and (max-device-width: 1366px) and (orientation : portrait) {
   #navbar a{
     font-size: 1em;
@@ -258,7 +252,7 @@
     margin-left: 5em;
   }
 }
-/* 아이패드 프로 가로 */
+/* iPad Pro (가로) ----------- */
 @media screen and (min-device-width: 1025px) and (max-device-width: 1366px) and (orientation : landscape) {
   #navbar a{
     font-size: 1em;
@@ -327,17 +321,10 @@
     margin-left: 5em;
   }
 }
-/* 아이패드 미니 가로 및 세로 */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)  {
-/* 사용자 코드 */
-}
 
-/* 아이패드 미니 가로 */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
-/* 사용자 코드 */
-}
-
-/* 아이패드 미니 세로 */
+/* iPad Mini(세로) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1)  {
-/* 사용자 코드 */
+}
+/* iPad Mini(가로) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
 }
