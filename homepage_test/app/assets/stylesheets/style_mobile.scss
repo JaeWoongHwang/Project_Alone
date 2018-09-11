@@ -1,0 +1,332 @@
+/* 스마트폰 (가로 및 세로) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  // Overall Section
+  .overall-text-company p{
+    font-size: 1em;
+  }
+  .overall-text-title p{
+    font-size: 1.5em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_sp.png);
+    background-size: cover;
+  }
+  // Service Section
+  .service-category-section p{
+    font-size: 0.3em;
+  }
+  .service-name-section p{
+    font-size: 1.5em;
+  }
+  .service-description-section p{
+    font-size: 0.5em;
+  }
+  // Slider Button
+  .fp-controlArrow.fp-prev {
+    border-width: 16.5px 17px 16.5px 0px;
+  }
+  .fp-controlArrow.fp-next {
+    border-width: 16.5px 0 16.5px 17px;
+  }
+  // Team Section
+  .team-introduction-wrapper{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-introduction-first-section{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .team-introduction-second-section{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .team-introduction-block{
+    height: 60%;
+    width: 30%;
+    margin-right: 2em;
+  }
+  .team-introduction-block-last{
+    height: 60%;
+    width: 30%;
+    margin-right: 2em;
+  }
+  .team-image-block{
+    height: 85%;
+    width: 100%;
+  }
+  .team-text-block{
+    height: 15%;
+    width: 100%;
+  }
+  .team-text-name{
+    height: 100%;
+    width: 100%;
+    border: 0px solid;
+    border-color: trensparent;
+  }
+  .team-text-content{
+    height: 0%;
+    width: 0%;
+  }
+  .team-text-block p{
+    font-size: 1.5em;
+  }
+  .team-text-name p{
+    font-size: 0.8em;
+  }
+  .team-text-content p{
+    font-size: 0em;
+    color: trensparent;
+  }
+  // Contact Section
+  .contact-content-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-text-block{
+    height: 45%;
+    width: 100%;
+    margin-left: 2em;
+  }
+  .contact-text-title{
+    display: flex;
+    align-items: center;
+  }
+  .contact-empty-block{
+    height: 2%;
+    width: 100%;
+  }
+  .contact-map-block{
+    height: 50%;
+    width: 100%;
+  }
+  .contact-text-title p{
+    font-size: 1.5em;
+  }
+  .contact-text-description p{
+    font-size: 1em;
+  }
+}
+
+/* 스마트폰 (가로 ) ----------- */
+@media only screen and (min-device-width: 321px) and (max-device-width: 811px) and (orientation : landscape) {
+  // Overall Section
+  .overall-text-company p{
+    font-size: 1em;
+  }
+  .overall-text-title p{
+    font-size: 2em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  // Service Section
+  .service-category-section p{
+    font-size: 0.5em;
+  }
+  .service-name-section p{
+    font-size: 1.5em;
+  }
+  .service-description-section p{
+    font-size: 0.8em;
+  }
+  // Slider Button
+  .fp-controlArrow.fp-prev {
+    border-width: 16.5px 17px 16.5px 0px;
+  }
+  .fp-controlArrow.fp-next {
+    border-width: 16.5px 0 16.5px 17px;
+  }
+  // Team Section
+  .team-introduction-wrapper{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 40px;
+  }
+  .team-introduction-first-section{
+    height: 50%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+  .team-introduction-second-section{
+    height: 50%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .team-introduction-block{
+    height: 80%;
+    width: 30%;
+    margin-right: 2em;
+  }
+  .team-introduction-block-last{
+    height: 80%;
+    width: 30%;
+    margin-right: 2em;
+  }
+  .team-image-block{
+    height: 85%;
+    width: 100%;
+  }
+  .team-text-block{
+    height: 15%;
+    width: 100%;
+  }
+  .team-text-name{
+    height: 100%;
+    width: 100%;
+    border: 0px solid;
+    border-color: trensparent;
+  }
+  .team-text-content{
+    height: 0%;
+    width: 0%;
+  }
+  .team-text-block p{
+    font-size: 1.5em;
+  }
+  .team-text-name p{
+    font-size: 0.8em;
+  }
+  .team-text-content p{
+    font-size: 0em;
+    color: trensparent;
+  }
+  // Contact Section
+  .contact-text-title p{
+    font-size: 1.5em;
+  }
+  .contact-text-description p{
+    font-size: 1em;
+  }
+}
+/* 아이폰 X 가로 */
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (orientation : landscape) {
+  // Overall Section
+  .overall-text-company p{
+    font-size: 1.2em;
+  }
+  .overall-text-title p{
+    font-size: 2em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  // Service Section
+  .service-category-section p{
+    font-size: 0.6em;
+  }
+  .service-name-section p{
+    font-size: 1.5em;
+  }
+  .service-description-section p{
+    font-size: 0.8em;
+  }
+  // Team Section
+  .team-introduction-wrapper{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 40px;
+  }
+  .team-introduction-first-section{
+    height: 50%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+  .team-introduction-second-section{
+    height: 50%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .team-introduction-block{
+    height: 90%;
+    width: 30%;
+    margin-right: 2em;
+  }
+  .team-introduction-block-last{
+    height: 90%;
+    width: 30%;
+    margin-right: 2em;
+  }
+  .team-image-block{
+    height: 85%;
+    width: 100%;
+  }
+  .team-text-block{
+    height: 15%;
+    width: 100%;
+  }
+  .team-text-name{
+    height: 100%;
+    width: 100%;
+    border: 0px solid;
+    border-color: trensparent;
+  }
+  .team-text-content{
+    height: 0%;
+    width: 0%;
+  }
+  .team-text-block p{
+    font-size: 2em;
+  }
+  .team-text-name p{
+    font-size: 0.8em;
+  }
+  .team-text-content p{
+    font-size: 0em;
+    color: trensparent;
+  }
+  // Contact Section
+  .contact-text-title p{
+    font-size: 2em;
+  }
+  .contact-text-description p{
+    font-size: 1em;
+  }
+}
+
+/* 아이폰 X 세로 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+/* 사용자 코드 */
+}
+
+/* 아이폰 6 Plus 가로 및 세로 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+/* 사용자 코드 */
+}
+
+/* 아이폰 6 Plus 가로 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {
+/* 사용자 코드 */
+}
+
+/* 아이폰 6 Plus 세로 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+/* 사용자 코드 */
+}

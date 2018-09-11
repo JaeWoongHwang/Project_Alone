@@ -1,0 +1,343 @@
+/* 아이패드 (가로 및 세로) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+/* 아이패드 (가로) ----------- */
+@media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+  // Overall Section
+  .overall-text-company p{
+    font-size: 1.2em;
+  }
+  .overall-text-title p{
+    font-size: 2.5em;
+  }
+  .overall-text-content p{
+    font-size: 1em;
+  }
+  // Service Section
+  .service-name-section p{
+    font-size: 2.5em;
+  }
+  .service-description-section p{
+    font-size: 1.2em;
+  }
+  // Team Section
+  .team-text-block p{
+    font-size: 2.5em;
+  }
+  .team-text-name p{
+    font-size: 1.2em;
+  }
+  .team-text-content p{
+    font-size: 0%;
+    color: trensparent;
+  }
+  .team-introduction-first-section{
+    align-items: baseline;
+  }
+  .team-introduction-block{
+    height: 80%;
+    width: 20%;
+  }
+  .team-introduction-block-last{
+    height: 80%;
+    width: 20%;
+  }
+  .team-introduction-second-section{
+    align-items: baseline;
+  }
+  // Contact Section
+  .contact-text-title p{
+    font-size: 2.5em;
+  }
+  .contact-text-description p{
+    font-size: 1.2em;
+  }
+}
+
+/* 아이패드 (세로) ----------- */
+@media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
+  #navbar a{
+    font-size: 1em;
+  }
+  // Overall Section
+  .overall-section-wrapper{
+    background-image: url(overall_image_tb);
+    background-size: cover;
+  }
+  // Service Section
+  .service-category-section p{
+    font-size: 1em;
+  }
+  .service-name-section p{
+    font-size: 3em;
+  }
+  .service-description-section p{
+    font-size: 1.5em;
+  }
+  // Team Section
+  .team-introduction-wrapper{
+    flex-direction: column;
+  }
+  .team-introduction-first-section{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+  .team-introduction-second-section{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+  .team-introduction-block{
+    height: 65%;
+    width: 40%;
+  }
+  .team-introduction-block-last{
+    height: 65%;
+    width: 40%;
+    margin-right: 2em;
+  }
+  .team-image-block{
+    height: 85%;
+    width: 100%;
+  }
+  .team-text-block{
+    height: 15%;
+    width: 100%;
+  }
+  .team-text-name{
+    height: 100%;
+    width: 100%;
+    border: 0px solid;
+    border-color: trensparent;
+  }
+  .team-text-content{
+    height: 0%;
+    width: 0%;
+  }
+  .team-text-block p{
+    font-size: 3em;
+  }
+  .team-text-name p{
+    font-size: 1.2em;
+  }
+  .team-text-content p{
+    font-size: 0em;
+    color: trensparent;
+  }
+  // Contact Section
+  .contact-content-wrapper{
+    flex-direction: column;
+  }
+  .contact-text-block{
+    height: 55%;
+    width: 100%;
+    margin-left: 5em;
+  }
+  .contact-text-title p{
+    font-size: 3em;
+  }
+  .contact-text-description p{
+    font-size: 1.2em;
+  }
+  .contact-empty-block{
+    height: 5%;
+    width: 100%;
+  }
+  .contact-map-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
+  }
+}
+
+/* 아이패드 프로 세로 */
+@media screen and (device-width: 1024px) and (max-device-width: 1366px) and (orientation : portrait) {
+  #navbar a{
+    font-size: 1em;
+  }
+  // Overall Section
+  .overall-text-company p{
+    font-size: 2.2em;
+  }
+  .overall-text-title p{
+    font-size: 4em;
+  }
+  .overall-text-content p{
+    font-size: 2em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_tb.png);
+    background-size: cover;
+  }
+  // Service Section
+  .service-category-section p{
+    font-size: 1.5em;
+  }
+  .service-name-section p{
+    font-size: 3em;
+  }
+  .service-description-section p{
+    font-size: 1.8em;
+  }
+  // Team Section
+  .team-introduction-wrapper{
+    flex-direction: column;
+  }
+  .team-introduction-first-section{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+  .team-introduction-second-section{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .team-introduction-block{
+    height: 55%;
+    width: 40%;
+  }
+  .team-introduction-block-last{
+    height: 55%;
+    width: 40%;
+    margin-right: 2em;
+  }
+  .team-image-block{
+    height: 85%;
+    width: 100%;
+  }
+  .team-text-block{
+    height: 15%;
+    width: 100%;
+  }
+  .team-text-name{
+    height: 100%;
+    width: 100%;
+    border: 0px solid;
+    border-color: trensparent;
+  }
+  .team-text-content{
+    height: 0%;
+    width: 0%;
+  }
+  .team-text-block p{
+    font-size: 3em;
+  }
+  .team-text-name p{
+    font-size: 1.6em;
+  }
+  .team-text-content p{
+    font-size: 0em;
+    color: trensparent;
+  }
+  // Contact Section
+  .contact-content-wrapper{
+    flex-direction: column;
+  }
+  .contact-text-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
+  }
+  .contact-text-title p{
+    font-size: 3em;
+  }
+  .contact-text-description p{
+    font-size: 1.8em;
+  }
+  .contact-empty-block{
+    height: 5%;
+    width: 100%;
+  }
+  .contact-map-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
+  }
+}
+/* 아이패드 프로 가로 */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1366px) and (orientation : landscape) {
+  #navbar a{
+    font-size: 1em;
+  }
+  // Overall Section
+  .overall-text-company p{
+    font-size: 2.2em;
+  }
+  .overall-text-title p{
+    font-size: 4em;
+  }
+  .overall-text-content p{
+    font-size: 2em;
+  }
+  .overall-section-wrapper{
+    background-image: url(overall_image_tb.png);
+    background-size: cover;
+  }
+  // Service Section
+  .service-category-section p{
+    font-size: 1.5em;
+  }
+  .service-name-section p{
+    font-size: 3em;
+  }
+  .service-description-section p{
+    font-size: 1.8em;
+  }
+  // Team Section
+  .team-text-block p{
+    font-size: 3.5em;
+  }
+  .team-text-name {
+    border: 0px solid;
+    border-color: trensparent;
+  }
+  .team-text-name p{
+    font-size: 1.8em;
+  }
+  .team-text-content p{
+    font-size: 0em;
+    color: trensparent;
+  }
+  // Contact Section
+  .contact-content-wrapper{
+    flex-direction: column;
+  }
+  .contact-text-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
+  }
+  .contact-text-title p{
+    font-size: 3em;
+  }
+  .contact-text-description p{
+    font-size: 1.8em;
+  }
+  .contact-empty-block{
+    height: 5%;
+    width: 100%;
+  }
+  .contact-map-block{
+    height: 40%;
+    width: 100%;
+    margin-left: 5em;
+  }
+}
+/* 아이패드 미니 가로 및 세로 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)  {
+/* 사용자 코드 */
+}
+
+/* 아이패드 미니 가로 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
+/* 사용자 코드 */
+}
+
+/* 아이패드 미니 세로 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1)  {
+/* 사용자 코드 */
+}

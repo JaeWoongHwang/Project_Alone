@@ -5,6 +5,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-image: url(overall_image_pc.png);
+  background-size: cover;
 }
 .overall-content-wrapper{
   height: 100%;
@@ -31,7 +33,7 @@
   height: 20%;
 }
 .overall-text-company p{
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 1.5em;
   font-weight: normal;
   font-style: normal;
@@ -47,7 +49,7 @@
   height: 40%;
 }
 .overall-text-title p{
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 3em;
   font-weight: bold;
   font-style: normal;
@@ -63,7 +65,7 @@
   height: 40%;
 }
 .overall-text-content p{
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 1.5em;
   font-weight: normal;
   font-style: normal;

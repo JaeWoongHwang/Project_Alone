@@ -1,5 +1,5 @@
-//Standard DeskTop
-@media screen and (min-width: 812px) and (max-width: 1024px) {
+/* PC 및 노트북 ----------- */
+@media only screen and (min-width: 1224px) {
   // Overall Section
   .overall-text-company p{
     font-size: 1.5em;
@@ -25,7 +25,6 @@
     font-size: 1em;
   }
   // Team Section
-  // Contact Section
   // Contact Section
   .contact-content-wrapper{
     flex-direction: column;
@@ -51,32 +50,6 @@
     margin-left: 5em;
   }
 }
-
-@media screen and (min-width: 1025px) {
-  // Overall Section
-  .overall-text-company p{
-    font-size: 1.5em;
-  }
-  .overall-text-title p{
-    font-size: 3em;
-  }
-  .overall-text-content p{
-    font-size: 1.5em;
-  }
-  .overall-section-wrapper{
-    background-image: url(overall_image_pc.png);
-    background-size: cover;
-  }
-  // Service Section
-  .service-category-section p{
-    font-size: 1.2em;
-  }
-  .service-name-section p{
-    font-size: 3em;
-  }
-  .service-description-section p{
-    font-size: 1em;
-  }
-  // Team Section
-  // Contact Section
+/* 대형 스크린 ----------- */
+@media only screen and (min-width: 1824px) {
 }

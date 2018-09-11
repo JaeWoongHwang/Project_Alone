@@ -20,8 +20,8 @@
   text-align: center;
 }
 .team-text-block p{
-  font-family: OpenSans;
-  font-size: 2.5em;
+  font-family: OpenSans, sans-serif;
+  font-size: 3em;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -37,9 +37,25 @@
   justify-content: center;
   align-items: center;
 }
+.team-introduction-first-section{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.team-introduction-second-section{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
 .team-introduction-block{
-  height: 50%;
-  width: 20%;
+  height: 45%;
+  width: 45%;
   max-height: 500px;
   max-width: 200px;
   position: relative;
@@ -50,8 +66,8 @@
   margin-right: 2em;
 }
 .team-introduction-block-last{
-  height: 50%;
-  width: 20%;
+  height: 45%;
+  width: 45%;
   max-height: 500px;
   max-width: 200px;
   display: flex;
@@ -62,14 +78,14 @@
 .team-image-block{
   height: 75%;
   width: 100%;
-  background-color: grey;
+  background-color: lightgrey;
 }
 .team-text-block{
   height: 25%;
   width: 100%;
 }
 .team-text-name{
-  height: 30%;
+  height: 35%;
   width: 100%;
   border-bottom: 2px solid;
   border-color: #dcdcdc;
@@ -86,7 +102,7 @@
   color: #3a3a3a;
 }
 .team-text-content{
-  height: 70%;
+  height: 65%;
   width: 100%;
 }
 .team-text-content p{
