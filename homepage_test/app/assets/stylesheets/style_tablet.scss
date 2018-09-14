@@ -5,7 +5,7 @@
   }
   // Overall Section
   .overall-section-wrapper{
-    background-image: url(overall_image_tb);
+    background-image: image-url("overall_image_tb.png");
     background-size: cover;
   }
   // Service Section
@@ -162,7 +162,7 @@
     font-size: 2em;
   }
   .overall-section-wrapper{
-    background-image: url(overall_image_tb.png);
+    background-image: image-url("overall_image_tb.png");
     background-size: cover;
   }
   // Service Section
@@ -268,7 +268,7 @@
     font-size: 2em;
   }
   .overall-section-wrapper{
-    background-image: url(overall_image_tb.png);
+    background-image: image-url("overall_image_tb.png");
     background-size: cover;
   }
   // Service Section

@@ -78,15 +78,15 @@
   align-items: center;
 }
 .first-image{
-  background-image: url(first.png);
+  background-image: image-url("first.png");
   background-size: cover;
 }
 .second-image{
-  background-image: url(second.png);
+  background-image: image-url("second.png");
   background-size: cover;
 }
 .third-image{
-  background-image: url(third.png);
+  background-image: image-url("third.png");
   background-size: cover;
 }
 .fp-controlArrow.fp-prev{
