@@ -24,12 +24,6 @@
 #modal-signup{
   justify-content: center;
 }
-.signup-card-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .signup-image-block{
   height: 11px;    
 }
@@ -76,4 +70,21 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+/*Policy Page*/
+#policy-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/*Register Page*/
+#register-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+.register-empty-block{
+  height: 20px;
 }
