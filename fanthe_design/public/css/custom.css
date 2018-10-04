@@ -21,6 +21,21 @@
 .text-count-block{
   width: 40%;
 }
+#modal-signup{
+  justify-content: center;
+}
+.signup-card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-image-block{
+  height: 11px;    
+}
+.signup-empty-block{
+  height: 20px;
+}
 /*Sign in Page */
 #signin-card{
   display: flex;
