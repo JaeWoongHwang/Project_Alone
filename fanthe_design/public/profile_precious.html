@@ -358,7 +358,7 @@
   <div class="page-title">
     <div class="container">
       <div class="column">
-        <h1>My Profile 수정 페이지</h1>
+        <h1>My Profile</h1>
       </div>
     </div>
   </div>
@@ -377,116 +377,359 @@
           </div>
         </aside>
         <nav class="list-group">
-          <a class="list-group-item active" href="profile.html"><i class="icon-user"></i>My Profile</a>
-          <a class="list-group-item" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
+          <a class="list-group-item" href="profile.html"><i class="icon-user"></i>My Profile</a>
+          <a class="list-group-item active" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
           <a class="list-group-item" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
           <a class="list-group-item" href="profile_fanlog.html"><i class="icon-heart"></i>My Fanlog</a>
           <a class="list-group-item" href="profile_charity.html"><i class="icon-tag"></i>My Charity</a>
           <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
-          <a class="list-group-item" href="profile_withdrawal.html"><i class="icon-home"></i>회원 탈퇴</a>
+          <a class="list-group-item" href="profile_withdrawal.html"><i class="icon-home"></i>회원 탈퇴</a>  
         </nav>
       </div>
       <div class="col-lg-8">
         <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-        <form class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-email">보조 이메일</label>
-              <input class="form-control" type="email" id="account-email" value="daniel.adams@mail.com">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-pass">현재 비밀번호</label>
-              <input class="form-control" type="password" id="account-pass">
-            </div>
-          </div>
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-pass">새 비밀번호</label>
-              <input class="form-control" type="password" id="account-pass">
-            </div>
-          </div>
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-confirm-pass">새 비밀번호 확인</label>
-              <input class="form-control" type="password" id="account-confirm-pass">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-fn">닉네임</label>
-              <input class="form-control" type="text" id="account-fn" value="Daniel" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-fn">이름</label>
-              <input class="form-control" type="text" id="account-fn" value="Daniel" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-phone">전화번호</label>
-              <input class="form-control" type="text" id="account-phone" value="+7 (805) 348 95 72" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="data-input">생년월일</label>
-              <input class="form-control" type="date" id="date-input" value="2017-06-13">
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="form-group">
-              <label for="account-address1">주소</label>
-              <input class="form-control" type="text" id="account-address1" required>
-            </div>
-          </div>
-          <div class="col-md-5" id="detailed-address">
-            <div class="form-group">
-              <label for="account-address2">상세 주소</label>
-              <input class="form-control" type="text" id="account-address2">
-            </div>
-          </div>
-          <div class="col-md-2" id="address-search-wrapper">
-            <button class="btn btn-secondary" type="button" id="address-search-button">주소 검색</button>
-          </div>
-          <div class="col-12">
-            <hr class="mt-2 mb-3">
-            <div class="d-flex flex-wrap justify-content-between align-items-center" id="profile-social-wrapper">
-              <div class="custom-control custom-checkbox d-block">
-                <input class="custom-control-input" type="checkbox" id="subscribe_me" checked>
-                <label class="custom-control-label" for="subscribe_me">뉴스레터 구독을 동의합니다.</label>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"><a class="nav-link active" href="#fanthe-cash" data-toggle="tab" role="tab">팬:더 캐쉬</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fanthe-point" data-toggle="tab" role="tab">별</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fanthe-coupon" data-toggle="tab" role="tab">리워드 쿠폰</a></li>
+        </ul>
+        <div class="tab-content">
+        <!--FAN:the Cash-->
+          <div class="tab-pane transition fade bottom show active" id="fanthe-cash" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="check-period-title">조회기간</p>
+                <div class="form-group" id="check-period-block">
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
+                </div>
               </div>
-              <div class="profile-social-block">
-                <a class="kakao-signin" href="#"><img src="img/logo/kakao_logo.png" id="kakao_logo"></a>
-                <a class="line-signin" href="#"><img src="img/logo/line_logo.png" id="line_logo"></a>
-                <a class="twitter-signin" href="#"><img src="img/logo/twitter_logo.png" alt=""></a>
-                <a class="weibo-signin" href="#"><img src="img/logo/weibo_logo.png" alt=""></a>
-                <a class="google-signin" href="#"><img src="img/logo/google_logo.png" alt=""></a>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 시작일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group" id="date-end-element">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 종료일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="detailed-check-block">
+                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
               </div>
             </div>
-          </div>
-          <div class="profile-button-wrapper">
-            <div class="profile-button-block">
-              <a href="profile.html"><button class="btn btn-primary margin-right-none" type="button">뒤로</button></a>
-              <button class="btn btn-primary margin-right-none" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="icon-check-circle" data-toast-title="프로필 내용이" data-toast-message="수정 되었습니다.">완료</button>
+            <h6 class="search-result-title">조회결과</h6>
+            <hr class="padding-bottom-1x">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th>구분</th>
+                      <th>거래일</th>
+                      <th>거래내용</th>
+                      <th>캐쉬적립내역</th>
+                      <th>캐쉬사용내역</th>
+                      <th>현재 캐쉬</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">1</a></td>
+                      <td>2018/12/11</td>
+                      <td><span>Canceled</span></td>
+                      <td><span class="text-success">In Progress</span>
+                      <td><span class="text-danger">$760.50</span></td>
+                      <td><span>$760.50</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">2</a></td>
+                      <td>2018/11/29</td>
+                      <td><span>In Progress</span></td>
+                      <td><span class="text-success">$315.20</span></td>
+                      <td><span class="text-danger">$315.20</span></td>
+                      <td>$315.20</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">3</a></td>
+                      <td>2018/11/28</td>
+                      <td><span>Delayed</span></td>
+                      <td><span class="text-success">$315.20</span>
+                      <td><span class="text-danger">$315.20</span></td>
+                      <td>$315.20</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">4</a></td>
+                      <td>2018/11/16</td>
+                      <td><span>Delivered</span></td>
+                      <td><span class="text-success">$198.35</span>
+                      <td><span class="text-danger">$198.35</span></td>
+                      <td>$198.35</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">5</a></td>
+                      <td>2018/11/11</td>
+                      <td><span>Delivered</span></td>
+                      <td><span class="text-success">$2,133.90</span>
+                      <td><span class="text-danger">$2,133.90</span></td>
+                      <td>$2,133.90</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">6</a></td>
+                      <td>2018/11/7</td>
+                      <td><span>Delivered</span></td>
+                      <td><span class="text-success">$86.40</span>
+                      <td><span class="text-danger">$86.40</span></td>
+                      <td>$86.40</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <nav class="pagination">
+                <div class="column">
+                  <ul class="pages">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">12</a></li>
+                  </ul>
+                </div>
+                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
+              </nav>
             </div>
           </div>
-        </form>
+        <!--FAN:the Point-->
+          <div class="tab-pane transition fade bottom" id="fanthe-point" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="check-period-title">조회기간</p>
+                <div class="form-group" id="check-period-block">
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 시작일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group" id="date-end-element">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 종료일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="detailed-check-block">
+                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
+              </div>
+            </div>
+            <h6 class="search-result-title">조회결과</h6>
+            <hr class="padding-bottom-1x">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th>구분</th>
+                      <th>날짜</th>
+                      <th>내용</th>
+                      <th>별 적립내역</th>
+                      <th>별 사용내역</th>
+                      <th>현재 별</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">1</a></td>
+                      <td>2018/12/11</td>
+                      <td><span>Canceled</span></td>
+                      <td><span class="text-success">In Progress</span>
+                      <td><span class="text-danger">$760.50</span></td>
+                      <td><span>$760.50</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">2</a></td>
+                      <td>2018/11/29</td>
+                      <td><span>In Progress</span></td>
+                      <td><span class="text-success">$315.20</span></td>
+                      <td><span class="text-danger">$315.20</span></td>
+                      <td>$315.20</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">3</a></td>
+                      <td>2018/11/28</td>
+                      <td><span>Delayed</span></td>
+                      <td><span class="text-success">$315.20</span>
+                      <td><span class="text-danger">$315.20</span></td>
+                      <td>$315.20</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">4</a></td>
+                      <td>2018/11/16</td>
+                      <td><span>Delivered</span></td>
+                      <td><span class="text-success">$198.35</span>
+                      <td><span class="text-danger">$198.35</span></td>
+                      <td>$198.35</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">5</a></td>
+                      <td>2018/11/11</td>
+                      <td><span>Delivered</span></td>
+                      <td><span class="text-success">$2,133.90</span>
+                      <td><span class="text-danger">$2,133.90</span></td>
+                      <td>$2,133.90</td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">6</a></td>
+                      <td>2018/11/7</td>
+                      <td><span>Delivered</span></td>
+                      <td><span class="text-success">$86.40</span>
+                      <td><span class="text-danger">$86.40</span></td>
+                      <td>$86.40</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <nav class="pagination">
+                <div class="column">
+                  <ul class="pages">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">12</a></li>
+                  </ul>
+                </div>
+                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
+              </nav>
+            </div>
+          </div>
+        <!--FAN:the Coupon-->
+          <div class="tab-pane transition fade bottom" id="fanthe-coupon" role="tabpanel">
+           <div class="row">
+              <div class="col-sm-4">
+                <p class="check-period-title">조회기간</p>
+                <div class="form-group" id="check-period-block">
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 시작일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group" id="date-end-element">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 종료일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="detailed-check-block">
+                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
+              </div>
+            </div>
+            <h6 class="search-result-title">조회결과</h6>
+            <hr class="padding-bottom-1x">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th>구분</th>
+                      <th>리워드 쿠폰</th>
+                      <th>응모일자</th>
+                      <th>추첨일자</th>
+                      <th>결과</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">1</a></td>
+                      <td>10,000</td>
+                      <td>2018/12/11</td>
+                      <td>2018/12/11</td>
+                      <td><span class="text-danger">Lose</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">2</a></td>
+                      <td>30,000</td>
+                      <td>2018/11/29</td>
+                      <td>2018/11/29</td>
+                      <td><span class="text-info">Win</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">3</a></td>
+                      <td>30,000</td>
+                      <td>2018/11/28</td>
+                      <td>2018/11/28</td>
+                      <td><span class="text-danger">Lose</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">4</a></td>
+                      <td>30,000</td>
+                      <td>2018/11/16</td>
+                      <td>2018/11/16</td>
+                      <td><span class="text-danger">Lose</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">5</a></td>
+                      <td>50,000</td>
+                      <td>2018/11/11</td>
+                      <td>2018/11/11</td>
+                      <td><span class="text-info">Win</span></td>
+                    </tr>
+                    <tr>
+                      <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">6</a></td>
+                      <td>10,000</td>
+                      <td>2018/11/07</td>
+                      <td>2018/11/07</td>
+                      <td><span class="text-info">Win</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <nav class="pagination">
+                <div class="column">
+                  <ul class="pages">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">8</a></li>
+                  </ul>
+                </div>
+                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
+              </nav>
+            </div> 
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -542,5 +785,4 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/scripts.min.js"></script>
 </body>
-
 </html>

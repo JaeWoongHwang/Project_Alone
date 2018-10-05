@@ -129,5 +129,38 @@
   margin-bottom: -20px;
 }
 #password-confirm-title{
-  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*Profile My Precious Page*/
+#check-period-block{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+}
+.check-period-title{
+ margin-bottom: 0;
+}
+#date-search-wrapper{
+ padding-right: 0;
+ padding-left: 12px;
+}
+#date-search-block .form-control{
+ height: 36px;
+ margin-top: 8px;    
+}
+#detailed-check-block{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0;
+ padding-left: 12px;
+     
+}
+#date-end-element{
+ margin-bottom: -20px;
+}
+.search-result-title{
+ margin-top: 10px;
+ margin-bottom: 5px;
 }

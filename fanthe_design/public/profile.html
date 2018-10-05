@@ -1,343 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>FAN:the</title>
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="Unishop - Universal E-Commerce Template">
-    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
-    <meta name="author" content="Rokaux">
-    <!-- Mobile Specific Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Favicon and Apple Icons-->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
-    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
-    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
-    <!-- Main Template Styles-->
-    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles-ff9900.min.css">
-    <!-- Custom Styles -->
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- Modernizr-->
-    <script src="js/modernizr.min.js"></script>
-  </head>
-  <!-- Body-->
-  <body>
-    <!-- Header-->
-    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <header class="site-header navbar-sticky">
-      <!-- Topbar-->
-      <div class="topbar d-flex justify-content-between">
-        <!-- Logo-->
-        <div class="site-branding d-flex"><a class="site-logo align-self-center" href="index.html"><img src="img/logo/fanthe_logo.png" alt="fanthe"></a></div>
-        <!-- Search / Categories-->
-        <div class="search-box-wrap d-flex">
-          <div class="btn-group categories-btn">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon-menu text-lg"></i>&nbsp;카테고리</button>
-            <div class="dropdown-menu"><a class="dropdown-item" href="#">카테고리 항목</a><a class="dropdown-item" href="#">카테고리 항목</a><a class="dropdown-item" href="#">카테고리 항목</a>
-            </div>
-          </div>
-          <div class="search-box-inner align-self-center">
-            <div class="search-box d-flex">
-              <form class="input-group" method="get"><span class="input-group-btn">
-                  <button type="submit"><i class="icon-search"></i></button></span>
-                <input class="form-control" type="search" placeholder="검색어를 입력하세요.">
-              </form>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>FAN:the</title>
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Unishop - Universal E-Commerce Template">
+  <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+  <meta name="author" content="Rokaux">
+  <!-- Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Favicon and Apple Icons-->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+  <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+  <!-- Main Template Styles-->
+  <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles-ff9900.min.css">
+  <!-- Custom Styles -->
+  <link href="css/custom.css" rel="stylesheet">
+  <!-- Modernizr-->
+  <script src="js/modernizr.min.js"></script>
+</head>
+<!-- Body-->
+
+<body>
+  <!-- Header-->
+  <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+  <header class="site-header navbar-sticky">
+    <!-- Topbar-->
+    <div class="topbar d-flex justify-content-between">
+      <!-- Logo-->
+      <div class="site-branding d-flex"><a class="site-logo align-self-center" href="index.html"><img src="img/logo/fanthe_logo.png" alt="fanthe"></a></div>
+      <!-- Search / Categories-->
+      <div class="search-box-wrap d-flex">
+        <div class="btn-group categories-btn">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon-menu text-lg"></i>&nbsp;카테고리</button>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">카테고리 항목</a><a class="dropdown-item" href="#">카테고리 항목</a><a class="dropdown-item" href="#">카테고리 항목</a>
           </div>
         </div>
-        <!-- Toolbar-->
-        <div class="toolbar d-flex">
-          <div class="toolbar-item visible-on-mobile mobile-menu-toggle"><a href="#">
-              <div><i class="icon-menu"></i><span class="text-label">메뉴</span></div></a></div>
-          <div class="toolbar-item hidden-on-mobile"><a href="#">
-              <div><i class="flag-icon"><img src="img/flags/KO.png" alt="Korean"></i><span class="text-label">한국어</span></div></a>
-            <ul class="toolbar-dropdown lang-dropdown">
-              <li><a href="#"><i class="flag-icon"><img src="img/flags/EN.png" alt="English"></i>&nbsp;English</a></li>
-              <li><a href="#"><i class="flag-icon"><img src="img/flags/CH.png" alt="Chinese"></i>&nbsp;中文</a></li>
-              <li><a href="#"><i class="flag-icon"><img src="img/flags/JA.png" alt="Japanese"></i>&nbsp;日本語</a></li>
-            </ul>
-          </div>
-          <div class="toolbar-item hidden-on-mobile"><a href="#">
-              <div><i class="icon-user"></i><span class="text-label">로그인 / 가입</span></div></a>
-            <div class="toolbar-dropdown text-center px-3">
-              <p class="text-xs mb-3 pt-2">로그인 및 회원가입 멘트</p><a class="btn btn-primary btn-sm btn-block" href="sign_in.html">로그인</a>
-              <p class="text-xs text-muted mb-2"><a href="policy.html">회원가입</a></p>
-            </div>
-          </div>
-        </div>
-        <!-- Mobile Menu-->
-        <div class="mobile-menu">
-          <!-- Search Box-->
-          <div class="mobile-search">
+        <div class="search-box-inner align-self-center">
+          <div class="search-box d-flex">
             <form class="input-group" method="get"><span class="input-group-btn">
                 <button type="submit"><i class="icon-search"></i></button></span>
               <input class="form-control" type="search" placeholder="검색어를 입력하세요.">
             </form>
           </div>
-          <!-- Toolbar-->
-          <div class="toolbar">
-            <div class="toolbar-item"><a href="#">
-                <div><i class="flag-icon"><img src="img/flags/KO.png" alt=""></i><span class="text-label">한국어</span></div></a>
-              <ul class="toolbar-dropdown lang-dropdown w-100">
-                <li><a href="#"><i class="flag-icon"><img src="img/flags/EN.png" alt=""></i>&nbsp;English</a></li>
-                <li><a href="#"><i class="flag-icon"><img src="img/flags/CH.png" alt=""></i>&nbsp;中文</a></li>
-                <li><a href="#"><i class="flag-icon"><img src="img/flags/JA.png" alt=""></i>&nbsp;日本語</a></li>
-              </ul>
-            </div>
-            <div class="toolbar-item">
-                <a href="sign_in.html">
-                <div>
-                    <i class="icon-user"></i><span class="text-label">로그인</span>
-                </div>
-                </a>
-            </div>
-            <div class="toolbar-item">
-                <a href="policy.html">
-                <div>
-                    <i class="icon-file"></i><span class="text-label">회원가입</span>
-                </div>
-                </a>
-            </div>
-          </div>
-          <!-- Slideable (Mobile) Menu-->
-          <nav class="slideable-menu">
-            <ul class="menu" data-initial-height="385">
-              <li class="has-children active"><span><a href="#">프로젝트</a><span class="sub-menu-toggle"></span></span>
-                <ul class="slideable-submenu">
-                    <li><a href="#">전체 프로젝트</a></li>
-                    <li><a href="#">진행 중</a></li>
-                    <li><a href="#">완료</a></li>
-                    <li class="has-children"><span><a href="#">FAN:the</a><span class="sub-menu-toggle"></span></span>
-                        <ul class="slideable-submenu">
-                            <li><a href="#">선 캐스팅</a></li>
-                            <li><a href="#">후 캐스팅</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-children"><span><a href="#">FAN:charity</a><span class="sub-menu-toggle"></span></span>
-                        <ul class="slideable-submenu">
-                            <li><a href="#">팬 개설</a></li>
-                            <li><a href="#">팬더 개설</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">팬더 개설</a></li>
-                </ul>
-              </li>
-              <li class="has-children"><span><a href="#">콘텐츠</a><span class="sub-menu-toggle"></span></span>
-                <ul class="slideable-submenu">
-                    <li><a href="#">모든 콘텐츠</a></li>
-                  <li class="has-children"><span><a href="#">콘텐츠별</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">팬:더 콜</a></li>
-                        <li><a href="#">복면 팬:더</a></li>
-                        <li><a href="#">팬:몽</a></li>
-                        <li><a href="#">팬:쇼</a></li>
-                        <li><a href="#">패널리티</a></li>
-                        <li><a href="#">팬:드라마</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-children"><span><a href="#">스테이션</a><span class="sub-menu-toggle"></span></span>
-                <ul class="slideable-submenu">
-                  <li class="has-children"><span><a href="#">팬:더 청원</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">제작 펀딩청원</a></li>
-                        <li><a href="#">기부 펀딩청원</a></li>
-                        <li><a href="#">모금 펀딩청원</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">팬:더 맘캐</a></li>
-                  <li><a href="#">팬:더 워크룸</a></li>    
-                  <li><a href="#">팬:더 랭크</a></li>
-                </ul>
-              </li>
-              <li class="has-children"><span><a href="#">우주</a><span class="sub-menu-toggle"></span></span>
-                <ul class="slideable-submenu">
-                  <li class="has-children"><span><a href="#">남자 아이돌</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children"><span><a href="#">여자 아이돌</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children"><span><a href="#">남자 배우</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children"><span><a href="#">여자 배우</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                        <li><a href="#">게시판 명</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children"><span><a href="#">BJ/크리에이터</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">우주 요청하기</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-children"><span><a href="#">스포츠</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="slideable-submenu">
-                        <li><a href="#">우주 요청하기</a></li>
-                    </ul>
-                  </li>    
-                  <li><a href="#">우주 요청하기</a></li>
-                </ul>
-              </li>
-              <li class="has-children"><span><a href="#">굿즈샵</a><span class="sub-menu-toggle"></span></span>
-                <ul class="slideable-submenu">
-                    <li><a href="#">굿즈 페이지</a></li>
-                    <li><a href="#">캐릭터 굿즈</a></li>
-                    <li><a href="#">커뮤니티 아이템</a></li>
-                </ul>
-              </li>
-              <li class="has-children"><span><a href="#">인포</a><span class="sub-menu-toggle"></span></span>
-                <ul class="slideable-submenu">
-                    <li><a href="#">공지</a></li>
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
-      <!-- Navbar-->
-      <div class="navbar">
-        <div class="btn-group categories-btn">
-          <div class="site-branding d-flex" id="navbar-fanthe-logo"><a class="site-logo align-self-center" href="#"><img src="img/logo/fanthe_logo.png" alt="fanthe"></a></div>
+      <!-- Toolbar-->
+      <div class="toolbar d-flex">
+        <div class="toolbar-item visible-on-mobile mobile-menu-toggle"><a href="#">
+            <div><i class="icon-menu"></i><span class="text-label">메뉴</span></div>
+          </a></div>
+        <div class="toolbar-item hidden-on-mobile"><a href="#">
+            <div><i class="flag-icon"><img src="img/flags/KO.png" alt="Korean"></i><span class="text-label">한국어</span></div>
+          </a>
+          <ul class="toolbar-dropdown lang-dropdown">
+            <li><a href="#"><i class="flag-icon"><img src="img/flags/EN.png" alt="English"></i>&nbsp;English</a></li>
+            <li><a href="#"><i class="flag-icon"><img src="img/flags/CH.png" alt="Chinese"></i>&nbsp;中文</a></li>
+            <li><a href="#"><i class="flag-icon"><img src="img/flags/JA.png" alt="Japanese"></i>&nbsp;日本語</a></li>
+          </ul>
         </div>
-        <!-- Main Navigation-->
-        <nav class="site-menu">
-          <ul>
-            <li class="has-submenu"><a href="#">프로젝트</a>
-              <ul class="sub-menu">
-                  <li><a href="#">전체 프로젝트</a></li>
-                  <li><a href="#">진행 중</a></li> 
-                  <li><a href="#">완료</a></li>
-                <li class="has-children"><a href="#">FAN:the</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">선 캐스팅</a></li>
-                      <li><a href="#">후 캐스팅</a></li>
+        <div class="toolbar-item hidden-on-mobile"><a href="#">
+            <div><i class="icon-user"></i><span class="text-label">로그인 / 가입</span></div>
+          </a>
+          <div class="toolbar-dropdown text-center px-3">
+            <p class="text-xs mb-3 pt-2">로그인 및 회원가입 멘트</p><a class="btn btn-primary btn-sm btn-block" href="sign_in.html">로그인</a>
+            <p class="text-xs text-muted mb-2"><a href="policy.html">회원가입</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu-->
+      <div class="mobile-menu">
+        <!-- Search Box-->
+        <div class="mobile-search">
+          <form class="input-group" method="get"><span class="input-group-btn">
+              <button type="submit"><i class="icon-search"></i></button></span>
+            <input class="form-control" type="search" placeholder="검색어를 입력하세요.">
+          </form>
+        </div>
+        <!-- Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-item"><a href="#">
+              <div><i class="flag-icon"><img src="img/flags/KO.png" alt=""></i><span class="text-label">한국어</span></div>
+            </a>
+            <ul class="toolbar-dropdown lang-dropdown w-100">
+              <li><a href="#"><i class="flag-icon"><img src="img/flags/EN.png" alt=""></i>&nbsp;English</a></li>
+              <li><a href="#"><i class="flag-icon"><img src="img/flags/CH.png" alt=""></i>&nbsp;中文</a></li>
+              <li><a href="#"><i class="flag-icon"><img src="img/flags/JA.png" alt=""></i>&nbsp;日本語</a></li>
+            </ul>
+          </div>
+          <div class="toolbar-item">
+            <a href="sign_in.html">
+              <div>
+                <i class="icon-user"></i><span class="text-label">로그인</span>
+              </div>
+            </a>
+          </div>
+          <div class="toolbar-item">
+            <a href="policy.html">
+              <div>
+                <i class="icon-file"></i><span class="text-label">회원가입</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Slideable (Mobile) Menu-->
+        <nav class="slideable-menu">
+          <ul class="menu" data-initial-height="385">
+            <li class="has-children active"><span><a href="#">프로젝트</a><span class="sub-menu-toggle"></span></span>
+              <ul class="slideable-submenu">
+                <li><a href="#">전체 프로젝트</a></li>
+                <li><a href="#">진행 중</a></li>
+                <li><a href="#">완료</a></li>
+                <li class="has-children"><span><a href="#">FAN:the</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">선 캐스팅</a></li>
+                    <li><a href="#">후 캐스팅</a></li>
                   </ul>
                 </li>
-                <li class="has-children"><a href="#">FAN:charity</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">팬 개설</a></li>
-                      <li><a href="#">팬더 개설</a></li>
+                <li class="has-children"><span><a href="#">FAN:charity</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">팬 개설</a></li>
+                    <li><a href="#">팬더 개설</a></li>
                   </ul>
                 </li>
-                <li><a href="#">FAN:together</a></li>
-              </ul>
-            </li>  
-           <li class="has-submenu"><a href="#">콘텐츠</a>
-              <ul class="sub-menu">
-                <li><a href="#">전체 채널</a></li>
-                <li><a href="#">팬:더 콜</a></li>
-                <li><a href="#">복면 팬:더</a></li>
-                <li><a href="#">팬:몽</a></li>
-                <li><a href="#">팬:쇼</a></li>
-                <li><a href="#">패널리티</a></li>
-                <li><a href="#">팬:드라마</a></li>
+                <li><a href="#">팬더 개설</a></li>
               </ul>
             </li>
-            <li class="has-submenu"><a href="#">스테이션</a>
-              <ul class="sub-menu">
-                <li class="has-children"><a href="#">팬:더 청원</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">제작 펀딩청원</a></li>
-                      <li><a href="#">기부 펀딩청원</a></li>
-                      <li><a href="#">모금 펀딩청원</a></li>
+            <li class="has-children"><span><a href="#">콘텐츠</a><span class="sub-menu-toggle"></span></span>
+              <ul class="slideable-submenu">
+                <li><a href="#">모든 콘텐츠</a></li>
+                <li class="has-children"><span><a href="#">콘텐츠별</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">팬:더 콜</a></li>
+                    <li><a href="#">복면 팬:더</a></li>
+                    <li><a href="#">팬:몽</a></li>
+                    <li><a href="#">팬:쇼</a></li>
+                    <li><a href="#">패널리티</a></li>
+                    <li><a href="#">팬:드라마</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="has-children"><span><a href="#">스테이션</a><span class="sub-menu-toggle"></span></span>
+              <ul class="slideable-submenu">
+                <li class="has-children"><span><a href="#">팬:더 청원</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">제작 펀딩청원</a></li>
+                    <li><a href="#">기부 펀딩청원</a></li>
+                    <li><a href="#">모금 펀딩청원</a></li>
                   </ul>
                 </li>
                 <li><a href="#">팬:더 맘캐</a></li>
-                <li><a href="#">팬:더 워크룸</a></li>      
+                <li><a href="#">팬:더 워크룸</a></li>
                 <li><a href="#">팬:더 랭크</a></li>
               </ul>
-            </li>    
-            <li class="has-megamenu"><a href="#">우주</a>
-              <ul class="mega-menu">
-                <li><span class="mega-menu-title">남자 아이돌</span>
-                    <ul class="sub-menu">
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                    </ul>
+            </li>
+            <li class="has-children"><span><a href="#">우주</a><span class="sub-menu-toggle"></span></span>
+              <ul class="slideable-submenu">
+                <li class="has-children"><span><a href="#">남자 아이돌</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                  </ul>
                 </li>
-                <li><span class="mega-menu-title">여자 아이돌</span>
-                    <ul class="sub-menu">
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                    </ul>
+                <li class="has-children"><span><a href="#">여자 아이돌</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                  </ul>
                 </li>
-                <li><span class="mega-menu-title">남자 배우</span>
-                    <ul class="sub-menu">
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                    </ul>
+                <li class="has-children"><span><a href="#">남자 배우</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                  </ul>
                 </li>
-                <li><span class="mega-menu-title">여자 배우</span>
-                    <ul class="sub-menu">
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                      <li><a href="#">게시판 명</a></li>
-                    </ul>
-                </li>  
-                <li><span class="mega-menu-title">BJ/크리에이터</span>
-                    <ul class="sub-menu">
-                    </ul>
+                <li class="has-children"><span><a href="#">여자 배우</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                    <li><a href="#">게시판 명</a></li>
+                  </ul>
                 </li>
-                <li><span class="mega-menu-title">스포츠</span>
-                    <ul class="sub-menu">
-                    </ul>
-                </li>  
-                <li><span class="mega-menu-title">추가요청</span>
-                    <button class="btn btn-sm btn-secondary" type="button">우주 요청하기</button>
+                <li class="has-children"><span><a href="#">BJ/크리에이터</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">우주 요청하기</a></li>
+                  </ul>
                 </li>
+                <li class="has-children"><span><a href="#">스포츠</a><span class="sub-menu-toggle"></span></span>
+                  <ul class="slideable-submenu">
+                    <li><a href="#">우주 요청하기</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">우주 요청하기</a></li>
               </ul>
             </li>
-            <li class="has-submenu"><a href="#">굿즈샵</a>
-              <ul class="sub-menu">
-                <li><a href="#">전체 상품</a></li>
+            <li class="has-children"><span><a href="#">굿즈샵</a><span class="sub-menu-toggle"></span></span>
+              <ul class="slideable-submenu">
+                <li><a href="#">굿즈 페이지</a></li>
                 <li><a href="#">캐릭터 굿즈</a></li>
                 <li><a href="#">커뮤니티 아이템</a></li>
               </ul>
             </li>
-            <li class="has-submenu"><a href="#">인포</a>
-              <ul class="sub-menu">
+            <li class="has-children"><span><a href="#">인포</a><span class="sub-menu-toggle"></span></span>
+              <ul class="slideable-submenu">
                 <li><a href="#">공지</a></li>
                 <li><a href="#">이벤트</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -346,167 +230,290 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <!-- Page Content-->
-    <!-- Page Title-->
-    <div class="page-title">
-      <div class="container">
-        <div class="column">
-          <h1>My Profile</h1>
-        </div>
+    </div>
+    <!-- Navbar-->
+    <div class="navbar">
+      <div class="btn-group categories-btn">
+        <div class="site-branding d-flex" id="navbar-fanthe-logo"><a class="site-logo align-self-center" href="#"><img src="img/logo/fanthe_logo.png" alt="fanthe"></a></div>
+      </div>
+      <!-- Main Navigation-->
+      <nav class="site-menu">
+        <ul>
+          <li class="has-submenu"><a href="#">프로젝트</a>
+            <ul class="sub-menu">
+              <li><a href="#">전체 프로젝트</a></li>
+              <li><a href="#">진행 중</a></li>
+              <li><a href="#">완료</a></li>
+              <li class="has-children"><a href="#">FAN:the</a>
+                <ul class="sub-menu">
+                  <li><a href="#">선 캐스팅</a></li>
+                  <li><a href="#">후 캐스팅</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="#">FAN:charity</a>
+                <ul class="sub-menu">
+                  <li><a href="#">팬 개설</a></li>
+                  <li><a href="#">팬더 개설</a></li>
+                </ul>
+              </li>
+              <li><a href="#">FAN:together</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu"><a href="#">콘텐츠</a>
+            <ul class="sub-menu">
+              <li><a href="#">전체 채널</a></li>
+              <li><a href="#">팬:더 콜</a></li>
+              <li><a href="#">복면 팬:더</a></li>
+              <li><a href="#">팬:몽</a></li>
+              <li><a href="#">팬:쇼</a></li>
+              <li><a href="#">패널리티</a></li>
+              <li><a href="#">팬:드라마</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu"><a href="#">스테이션</a>
+            <ul class="sub-menu">
+              <li class="has-children"><a href="#">팬:더 청원</a>
+                <ul class="sub-menu">
+                  <li><a href="#">제작 펀딩청원</a></li>
+                  <li><a href="#">기부 펀딩청원</a></li>
+                  <li><a href="#">모금 펀딩청원</a></li>
+                </ul>
+              </li>
+              <li><a href="#">팬:더 맘캐</a></li>
+              <li><a href="#">팬:더 워크룸</a></li>
+              <li><a href="#">팬:더 랭크</a></li>
+            </ul>
+          </li>
+          <li class="has-megamenu"><a href="#">우주</a>
+            <ul class="mega-menu">
+              <li><span class="mega-menu-title">남자 아이돌</span>
+                <ul class="sub-menu">
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                </ul>
+              </li>
+              <li><span class="mega-menu-title">여자 아이돌</span>
+                <ul class="sub-menu">
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                </ul>
+              </li>
+              <li><span class="mega-menu-title">남자 배우</span>
+                <ul class="sub-menu">
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                </ul>
+              </li>
+              <li><span class="mega-menu-title">여자 배우</span>
+                <ul class="sub-menu">
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                  <li><a href="#">게시판 명</a></li>
+                </ul>
+              </li>
+              <li><span class="mega-menu-title">BJ/크리에이터</span>
+                <ul class="sub-menu">
+                </ul>
+              </li>
+              <li><span class="mega-menu-title">스포츠</span>
+                <ul class="sub-menu">
+                </ul>
+              </li>
+              <li><span class="mega-menu-title">추가요청</span>
+                <button class="btn btn-sm btn-secondary" type="button">우주 요청하기</button>
+              </li>
+            </ul>
+          </li>
+          <li class="has-submenu"><a href="#">굿즈샵</a>
+            <ul class="sub-menu">
+              <li><a href="#">전체 상품</a></li>
+              <li><a href="#">캐릭터 굿즈</a></li>
+              <li><a href="#">커뮤니티 아이템</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu"><a href="#">인포</a>
+            <ul class="sub-menu">
+              <li><a href="#">공지</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Page Content-->
+  <!-- Page Title-->
+  <div class="page-title">
+    <div class="container">
+      <div class="column">
+        <h1>My Profile</h1>
       </div>
     </div>
-    <div class="container padding-bottom-3x mb-2">
-      <div class="row">
-        <div class="col-lg-4">
-          <aside class="user-info-wrapper">
-            <div class="user-cover" style="background-image: url(img/account/user-cover-img.jpg);">
-                <div class="info-label"><i class="icon-award"></i>등급 이름</div>
+  </div>
+  <div class="container padding-bottom-3x mb-2">
+    <div class="row">
+      <div class="col-lg-4">
+        <aside class="user-info-wrapper">
+          <div class="user-cover" style="background-image: url(img/account/user-cover-img.jpg);">
+            <div class="info-label"><i class="icon-award"></i>등급 이름</div>
+          </div>
+          <div class="user-info">
+            <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="img/account/user-ava.jpg" alt="User"></div>
+            <div class="user-data">
+              <h4 class="h5">닉네임</h4><span>Joined February 06, 2017 (가입)</span>
             </div>
-            <div class="user-info">
-              <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="img/account/user-ava.jpg" alt="User"></div>
-              <div class="user-data">
-                <h4 class="h5">닉네임</h4><span>Joined February 06, 2017 (가입)</span>
-              </div>
-            </div>
-          </aside>
-          <nav class="list-group">
-              <a class="list-group-item active" href="#"><i class="icon-user"></i>My Profile</a>
-              <a class="list-group-item" href="#"><i class="icon-shopping-bag"></i>My Precious</a>
-              <a class="list-group-item" href="#"><i class="icon-map-pin"></i>My Order</a>
-              <a class="list-group-item" href="#"><i class="icon-heart"></i>My Fanlog</a>
-              <a class="list-group-item" href="#"><i class="icon-tag"></i>My Charity
-              </a>
-              <a class="list-group-item" href="faq.html"><i class="icon-tag"></i>1:1 문의</a>
-              <a class="list-group-item" href="#"><i class="icon-tag"></i>회원 탈퇴</a>
-          </nav>
-        </div>
-        <div class="col-lg-8">
-          <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-          <form class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account-email">이메일</label>
-                <input class="form-control" type="email" id="account-email" value="daniel.adams@mail.com" disabled>
-              </div>
-            </div>
-            <div class="col-md-6" >
-              <div class="form-group">
-                <label for="account-email">보조 이메일</label>
-                <input class="form-control" type="email" id="account-email" value="daniel123@mail.com">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account-fn">닉네임</label>
-                <input class="form-control" type="text" id="account-fn" value="Daniel" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account-fn">이름</label>
-                <input class="form-control" type="text" id="account-fn" value="Daniel" required>
-              </div>
-            </div>  
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account-phone">전화번호</label>
-                <input class="form-control" type="text" id="account-phone" value="+7 (805) 348 95 72" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                  <label for="data-input">생년월일</label>
-                  <input class="form-control" type="date" id="date-input" value="2017-06-13">  
-                </div>  
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account-address1">주소</label>
-                <input class="form-control" type="text" id="account-address1" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="account-address2">상세 주소</label>
-                <input class="form-control" type="text" id="account-address2">
-              </div>
-            </div>
-            <div class="col-12" >
-              <hr class="mt-2 mb-3">
-              <div class="d-flex flex-wrap justify-content-between align-items-center" id="profile-social-wrapper">
-                <div class="custom-control custom-checkbox d-block">
-                  <input class="custom-control-input" type="checkbox" id="subscribe_me" checked>
-                  <label class="custom-control-label" for="subscribe_me">뉴스레터 구독을 동의합니다.</label>
-                </div>
-                <div class="profile-social-block">
-                  <a class="kakao-signin" href="#"><img src="img/logo/kakao_logo.png" id="kakao_logo"></a>
-                  <a class="line-signin" href="#"><img src="img/logo/line_logo.png" id="line_logo"></a>
-                  <a class="twitter-signin" href="#"><img src="img/logo/twitter_logo.png" alt=""></a>
-                  <a class="weibo-signin" href="#"><img src="img/logo/weibo_logo.png" alt=""></a>
-                  <a class="google-signin" href="#"><img src="img/logo/google_logo.png" alt=""></a>
-                </div>                
-              </div>    
-            </div>
-            <div class= "profile-button-wrapper">
-                <div class="profile-button-block">
-                    <a href="profile_edit.html"><button class="btn btn-primary margin-right-none" type="button">수정</button></a>   
-                    <button class="btn btn-primary margin-right-none" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="icon-check-circle" data-toast-title="프로필이" data-toast-message="저장 되었습니다.">저장</button>
-                </div>
-            </div>  
-          </form>
-        </div>
+          </div>
+        </aside>
+        <nav class="list-group">
+          <a class="list-group-item active" href="profile.html"><i class="icon-user"></i>My Profile</a>
+          <a class="list-group-item" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
+          <a class="list-group-item" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
+          <a class="list-group-item" href="profile_fanlog.html"><i class="icon-heart"></i>My Fanlog</a>
+          <a class="list-group-item" href="profile_charity.html"><i class="icon-tag"></i>My Charity</a>
+          <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
+          <a class="list-group-item" href="profile_withdrawal.html"><i class="icon-home"></i>회원 탈퇴</a>
+        </nav>
       </div>
-    </div>      
+      <div class="col-lg-8">
+        <div class="padding-top-2x mt-2 hidden-lg-up"></div>
+        <form class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-email">이메일</label>
+              <input class="form-control" type="email" id="account-email" value="daniel.adams@mail.com" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-email">보조 이메일</label>
+              <input class="form-control" type="email" id="account-email" value="daniel123@mail.com" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-fn">닉네임</label>
+              <input class="form-control" type="text" id="account-fn" value="Daniel" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-fn">이름</label>
+              <input class="form-control" type="text" id="account-fn" value="Daniel" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-phone">전화번호</label>
+              <input class="form-control" type="text" id="account-phone" value="+7 (805) 348 95 72" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="data-input">생년월일</label>
+              <input class="form-control" type="date" id="date-input" value="2017-06-13" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-address1">주소</label>
+              <input class="form-control" type="text" id="account-address1" disabled>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="account-address2">상세 주소</label>
+              <input class="form-control" type="text" id="account-address2" disabled>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr class="mt-2 mb-3">
+            <div class="d-flex flex-wrap justify-content-between align-items-center" id="profile-social-wrapper">
+              <div class="custom-control custom-checkbox d-block">
+                <input class="custom-control-input" type="checkbox" id="subscribe_me" checked disabled>
+                <label class="custom-control-label" for="subscribe_me">뉴스레터 구독을 동의합니다.</label>
+              </div>
+              <div class="profile-social-block">
+                <a class="kakao-signin" href="#"><img src="img/logo/kakao_logo.png" id="kakao_logo"></a>
+                <a class="line-signin" href="#"><img src="img/logo/line_logo.png" id="line_logo"></a>
+                <a class="twitter-signin" href="#"><img src="img/logo/twitter_logo.png" alt=""></a>
+                <a class="weibo-signin" href="#"><img src="img/logo/weibo_logo.png" alt=""></a>
+                <a class="google-signin" href="#"><img src="img/logo/google_logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="profile-button-wrapper">
+            <div class="profile-button-block">
+              <a href="profile_edit.html"><button class="btn btn-primary margin-right-none" type="button">수정</button></a>
+              <button class="btn btn-primary margin-right-none" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="icon-check-circle" data-toast-title="프로필이" data-toast-message="저장 되었습니다.">저장</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- Site Footer-->
-    <footer class="site-footer" style="background-image: url(img/footer-bg.png);">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <section class="widget widget-links widget-light-skin">
-              <h3 class="widget-title">About Us</h3>
-              <ul>
-                <li><a href="#">FAN:charity</a></li>
-                <li><a href="#">What is the FAN:the?</a></li>
-                <li><a href="#">How FAN:the think?</a></li>  
-              </ul>
+  <footer class="site-footer" style="background-image: url(img/footer-bg.png);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <section class="widget widget-links widget-light-skin">
+            <h3 class="widget-title">About Us</h3>
+            <ul>
+              <li><a href="#">FAN:charity</a></li>
+              <li><a href="#">What is the FAN:the?</a></li>
+              <li><a href="#">How FAN:the think?</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <section class="widget widget-links widget-light-skin">
+            <h3 class="widget-title">Information</h3>
+            <ul>
+              <li><a href="#">공지</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-lg-6">
+          <!-- Categories-->
+          <section class="widget widget-links widget-light-skin">
+            <!-- Mobile App Buttons-->
+            <section class="widget widget-light-skin">
+              <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#">
+                <span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a>
+              <a class="market-button google-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span>
+                <span class="mb-title">Google Play</span></a>
+              <div>
+                <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin"
+                  href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-youtube"></i></a>
+              </div>
             </section>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <section class="widget widget-links widget-light-skin">
-              <h3 class="widget-title">Information</h3>
-              <ul>
-                <li><a href="#">공지</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#">이벤트</a></li>  
-              </ul>
-            </section>
-          </div>
-            <div class="col-lg-6">
-                <!-- Categories-->
-                <section class="widget widget-links widget-light-skin">
-                    <!-- Mobile App Buttons-->
-                    <section class="widget widget-light-skin">
-                      <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#">
-                        <span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a>
-                        <a class="market-button google-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span>
-                        <span class="mb-title">Google Play</span></a>
-                    <div>
-                        <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-youtube"></i></a>
-                    </div>
-                    </section>
-                </section>
-              </div>            
-        </div>        
-        <!-- Copyright-->
-        <p class="footer-copyright">© 2018 Beyond the Dream Corp. All rights reserved.</p>
+          </section>
+        </div>
       </div>
-    </footer>
-    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-chevron-up"></i></a>
-    <!-- Backdrop-->
-    <div class="site-backdrop"></div>
-    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-    <script src="js/vendor.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-  </body>
-</html>      
+      <!-- Copyright-->
+      <p class="footer-copyright">© 2018 Beyond the Dream Corp. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-chevron-up"></i></a>
+  <!-- Backdrop-->
+  <div class="site-backdrop"></div>
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+  <script src="js/vendor.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
