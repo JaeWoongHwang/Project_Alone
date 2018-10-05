@@ -164,3 +164,15 @@
  margin-top: 10px;
  margin-bottom: 5px;
 }
+/*Password Reset Page*/
+#password-form-wrapper{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+#password-button-block{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+}
