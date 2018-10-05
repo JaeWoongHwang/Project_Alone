@@ -352,7 +352,7 @@
     <div class="page-title">
       <div class="container">
         <div class="column">
-          <h1>My Profile</h1>
+          <h1>My Profile 수정 페이지</h1>
         </div>
       </div>
     </div>
@@ -361,7 +361,7 @@
         <div class="col-lg-4">
           <aside class="user-info-wrapper">
             <div class="user-cover" style="background-image: url(img/account/user-cover-img.jpg);">
-                <div class="info-label"><i class="icon-award"></i>등급 이름</div>
+              <div class="info-label"><i class="icon-award"></i>등급 이름</div>
             </div>
             <div class="user-info">
               <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="img/account/user-ava.jpg" alt="User"></div>
@@ -386,16 +386,40 @@
           <form class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label for="account-email">이메일</label>
-                <input class="form-control" type="email" id="account-email" value="daniel.adams@mail.com" disabled>
+                <label for="account-email">보조 이메일</label>
+                <input class="form-control" type="email" id="account-email" value="daniel.adams@mail.com">
               </div>
             </div>
             <div class="col-md-6" >
               <div class="form-group">
-                <label for="account-email">보조 이메일</label>
-                <input class="form-control" type="email" id="account-email" value="daniel123@mail.com">
               </div>
             </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-pass">현재 비밀번호</label>
+                <input class="form-control" type="password" id="account-pass">
+              </div>
+            </div>
+            <div class="col-md-6">
+            </div>  
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-pass">새 비밀번호</label>
+                <input class="form-control" type="password" id="account-pass">
+              </div>
+            </div>
+            <div class="col-md-6">
+            </div>    
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-confirm-pass">새 비밀번호 확인</label>
+                <input class="form-control" type="password" id="account-confirm-pass">
+              </div>
+            </div>  
+            <div class="col-md-6">
+              <div class="form-group">
+              </div>
+            </div>    
             <div class="col-md-6">
               <div class="form-group">
                 <label for="account-fn">닉네임</label>
@@ -420,17 +444,20 @@
                   <input class="form-control" type="date" id="date-input" value="2017-06-13">  
                 </div>  
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <div class="form-group">
                 <label for="account-address1">주소</label>
                 <input class="form-control" type="text" id="account-address1" required>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5" id="detailed-address">
               <div class="form-group">
                 <label for="account-address2">상세 주소</label>
                 <input class="form-control" type="text" id="account-address2">
               </div>
+            </div>
+            <div class="col-md-2" id="address-search-wrapper" >
+              <button class="btn btn-secondary" type="button" id="address-search-button">주소 검색</button>    
             </div>
             <div class="col-12" >
               <hr class="mt-2 mb-3">
@@ -450,8 +477,8 @@
             </div>
             <div class= "profile-button-wrapper">
                 <div class="profile-button-block">
-                    <a href="profile_edit.html"><button class="btn btn-primary margin-right-none" type="button">수정</button></a>   
-                    <button class="btn btn-primary margin-right-none" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="icon-check-circle" data-toast-title="프로필이" data-toast-message="저장 되었습니다.">저장</button>
+                    <a href="profile.html"><button class="btn btn-primary margin-right-none" type="button">뒤로</button></a>   
+                    <button class="btn btn-primary margin-right-none" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="icon-check-circle" data-toast-title="프로필 내용이" data-toast-message="수정 되었습니다.">완료</button>
                 </div>
             </div>  
           </form>
