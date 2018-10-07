@@ -358,375 +358,45 @@
   <div class="page-title">
     <div class="container">
       <div class="column">
-        <h1>My Precious</h1>
+        <h1>배송정보</h1>
       </div>
     </div>
   </div>
-  <div class="container padding-bottom-3x mb-2">
-    <div class="row">
-      <div class="col-lg-4">
-        <aside class="user-info-wrapper" id="user-info-block">
-          <div class="user-info">
-            <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="img/account/user-ava.jpg" alt="User"></div>
-            <div class="user-data">
-              <h4 class="h5">닉네임</h4><span>Joined February 06, 2017 (가입)</span>
-            </div>
-          </div>
-        </aside>
-        <nav class="list-group">
-          <a class="list-group-item" href="profile.html"><i class="icon-user"></i>My Profile</a>
-          <a class="list-group-item active" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
-          <a class="list-group-item" href="profile_fanlog.html"><i class="icon-heart"></i>My Fanlog</a>
-          <a class="list-group-item" href="profile_charity.html"><i class="icon-tag"></i>My Charity</a>
-          <a class="list-group-item" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
-          <a class="list-group-item" href="profile_address.html"><i class="icon-home"></i>My Address</a>
-          <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
-        </nav>
+  <!-- Page Content-->
+  <div class="container padding-bottom-3x mb-1">
+    <div class="card mb-3">
+      <div class="p-4 text-center text-white bg-dark rounded-top"><span class="text-uppercase">주문번호 - </span><span class="text-medium">34VB5540K83</span></div>
+      <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary">
+        <div class="w-100 text-center py-1 px-2"><span class='text-medium'>배송업체 : </span>우체국 택배</div>
+        <div class="w-100 text-center py-1 px-2"><span class='text-medium'>주문상태 : </span>상품준비중</div>
+        <div class="w-100 text-center py-1 px-2"><span class='text-medium'>도착예상날짜 : </span> 2018/12/30</div>
       </div>
-      <div class="col-lg-8">
-        <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item"><a class="nav-link active" href="#fanthe-cash" data-toggle="tab" role="tab">팬:더 캐쉬</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fanthe-point" data-toggle="tab" role="tab">별</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fanthe-coupon" data-toggle="tab" role="tab">리워드 쿠폰</a></li>
-        </ul>
-        <div class="tab-content">
-          <!--FAN:the Cash-->
-          <div class="tab-pane transition fade bottom show active" id="fanthe-cash" role="tabpanel">
-            <div class="row">
-              <div class="col-sm-4">
-                <p class="check-period-title">조회기간</p>
-                <div class="form-group" id="check-period-block">
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 시작일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group" id="date-end-element">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 종료일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group" id="detailed-check-block">
-                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
-              </div>
-            </div>
-            <h6 class="search-result-title">조회결과</h6>
-            <hr class="padding-bottom-1x">
-            <div class="col-lg-12">
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead>
-                    <tr>
-                      <th>구분</th>
-                      <th>거래일</th>
-                      <th>거래내용</th>
-                      <th>적립내역</th>
-                      <th>사용내역</th>
-                      <th>현재 캐쉬</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a class="navi-link" href="#">1</a></td>
-                      <td>2018/12/11</td>
-                      <td><span>Canceled</span></td>
-                      <td><span class="text-success">In Progress</span>
-                      <td><span class="text-danger">$760.50</span></td>
-                      <td><span>$760.50</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">2</a></td>
-                      <td>2018/11/29</td>
-                      <td><span>In Progress</span></td>
-                      <td><span class="text-success">$315.20</span></td>
-                      <td><span class="text-danger">$315.20</span></td>
-                      <td>$315.20</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">3</a></td>
-                      <td>2018/11/28</td>
-                      <td><span>Delayed</span></td>
-                      <td><span class="text-success">$315.20</span>
-                      <td><span class="text-danger">$315.20</span></td>
-                      <td>$315.20</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">4</a></td>
-                      <td>2018/11/16</td>
-                      <td><span>Delivered</span></td>
-                      <td><span class="text-success">$198.35</span>
-                      <td><span class="text-danger">$198.35</span></td>
-                      <td>$198.35</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">5</a></td>
-                      <td>2018/11/11</td>
-                      <td><span>Delivered</span></td>
-                      <td><span class="text-success">$2,133.90</span>
-                      <td><span class="text-danger">$2,133.90</span></td>
-                      <td>$2,133.90</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">6</a></td>
-                      <td>2018/11/7</td>
-                      <td><span>Delivered</span></td>
-                      <td><span class="text-success">$86.40</span>
-                      <td><span class="text-danger">$86.40</span></td>
-                      <td>$86.40</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <hr>
-              <nav class="pagination">
-                <div class="column">
-                  <ul class="pages">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li>...</li>
-                    <li><a href="#">12</a></li>
-                  </ul>
-                </div>
-                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
-              </nav>
-            </div>
+      <div class="card-body">
+        <div class="steps flex-sm-nowrap padding-top-1x padding-bottom-1x">
+          <div class="step active"><i class="icon-shopping-bag"></i>
+            <h4 class="step-title">주문접수</h4>
           </div>
-          <!--FAN:the Point-->
-          <div class="tab-pane transition fade bottom" id="fanthe-point" role="tabpanel">
-            <div class="row">
-              <div class="col-sm-4">
-                <p class="check-period-title">조회기간</p>
-                <div class="form-group" id="check-period-block">
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 시작일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group" id="date-end-element">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 종료일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group" id="detailed-check-block">
-                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
-              </div>
-            </div>
-            <h6 class="search-result-title">조회결과</h6>
-            <hr class="padding-bottom-1x">
-            <div class="col-lg-12">
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead>
-                    <tr>
-                      <th>구분</th>
-                      <th>날짜</th>
-                      <th>내용</th>
-                      <th>적립내역</th>
-                      <th>사용내역</th>
-                      <th>현재 별</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a class="navi-link" href="#">1</a></td>
-                      <td>2018/12/11</td>
-                      <td><span>Canceled</span></td>
-                      <td><span class="text-success">In Progress</span>
-                      <td><span class="text-danger">$760.50</span></td>
-                      <td><span>$760.50</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">2</a></td>
-                      <td>2018/11/29</td>
-                      <td><span>In Progress</span></td>
-                      <td><span class="text-success">$315.20</span></td>
-                      <td><span class="text-danger">$315.20</span></td>
-                      <td>$315.20</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">3</a></td>
-                      <td>2018/11/28</td>
-                      <td><span>Delayed</span></td>
-                      <td><span class="text-success">$315.20</span>
-                      <td><span class="text-danger">$315.20</span></td>
-                      <td>$315.20</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">4</a></td>
-                      <td>2018/11/16</td>
-                      <td><span>Delivered</span></td>
-                      <td><span class="text-success">$198.35</span>
-                      <td><span class="text-danger">$198.35</span></td>
-                      <td>$198.35</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">5</a></td>
-                      <td>2018/11/11</td>
-                      <td><span>Delivered</span></td>
-                      <td><span class="text-success">$2,133.90</span>
-                      <td><span class="text-danger">$2,133.90</span></td>
-                      <td>$2,133.90</td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">6</a></td>
-                      <td>2018/11/7</td>
-                      <td><span>Delivered</span></td>
-                      <td><span class="text-success">$86.40</span>
-                      <td><span class="text-danger">$86.40</span></td>
-                      <td>$86.40</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <hr>
-              <nav class="pagination">
-                <div class="column">
-                  <ul class="pages">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li>...</li>
-                    <li><a href="#">12</a></li>
-                  </ul>
-                </div>
-                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
-              </nav>
-            </div>
+          <div class="step active"><i class="icon-settings"></i>
+            <h4 class="step-title">상품준비중</h4>
           </div>
-          <!--FAN:the Coupon-->
-          <div class="tab-pane transition fade bottom" id="fanthe-coupon" role="tabpanel">
-            <div class="row">
-              <div class="col-sm-4">
-                <p class="check-period-title">조회기간</p>
-                <div class="form-group" id="check-period-block">
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 시작일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group" id="date-end-element">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 종료일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group" id="detailed-check-block">
-                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
-              </div>
-            </div>
-            <h6 class="search-result-title">조회결과</h6>
-            <hr class="padding-bottom-1x">
-            <div class="col-lg-12">
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead>
-                    <tr>
-                      <th>구분</th>
-                      <th>리워드 쿠폰</th>
-                      <th>응모일자</th>
-                      <th>추첨일자</th>
-                      <th>결과</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a class="navi-link" href="#">1</a></td>
-                      <td>10,000</td>
-                      <td>2018/12/11</td>
-                      <td>2018/12/11</td>
-                      <td><span class="text-danger">Lose</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">2</a></td>
-                      <td>30,000</td>
-                      <td>2018/11/29</td>
-                      <td>2018/11/29</td>
-                      <td><span class="text-info">Win</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">3</a></td>
-                      <td>30,000</td>
-                      <td>2018/11/28</td>
-                      <td>2018/11/28</td>
-                      <td><span class="text-danger">Lose</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">4</a></td>
-                      <td>30,000</td>
-                      <td>2018/11/16</td>
-                      <td>2018/11/16</td>
-                      <td><span class="text-danger">Lose</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">5</a></td>
-                      <td>50,000</td>
-                      <td>2018/11/11</td>
-                      <td>2018/11/11</td>
-                      <td><span class="text-info">Win</span></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="#">6</a></td>
-                      <td>10,000</td>
-                      <td>2018/11/07</td>
-                      <td>2018/11/07</td>
-                      <td><span class="text-info">Win</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <hr>
-              <nav class="pagination">
-                <div class="column">
-                  <ul class="pages">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li>...</li>
-                    <li><a href="#">8</a></li>
-                  </ul>
-                </div>
-                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
-              </nav>
-            </div>
+          <div class="step"><i class="icon-award"></i>
+            <h4 class="step-title">발송준비중</h4>
+          </div>
+          <div class="step"><i class="icon-truck"></i>
+            <h4 class="step-title">상품발송</h4>
+          </div>
+          <div class="step"><i class="icon-home"></i>
+            <h4 class="step-title">배송완료</h4>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-sm-between align-items-center">
+      <div class="custom-control custom-checkbox mr-3">
+      </div>
+      <div class="text-left text-sm-right">
+        <a class="btn btn-primary btn-sm" href="profile_order.html">뒤로</a>
+        <a class="btn btn-primary btn-sm" href="#">배송추적</a>
       </div>
     </div>
   </div>

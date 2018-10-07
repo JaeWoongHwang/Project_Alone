@@ -155,7 +155,6 @@
  align-items: center;
  margin-bottom: 0;
  padding-left: 12px;
-     
 }
 #date-end-element{
  margin-bottom: -20px;
@@ -163,6 +162,10 @@
 .search-result-title{
  margin-top: 10px;
  margin-bottom: 5px;
+}
+#user-info-block{
+ padding-top: 10px;
+ padding-bottom: 10px;
 }
 /*Password Reset Page*/
 #password-form-wrapper{
@@ -175,4 +178,12 @@
  display: flex;
  flex-direction: row;
  justify-content: flex-end;
+}
+/*Profile My Fanlog Page*/
+#check-period-block #small-button-fanlog{
+ margin-right: 2px;
+ height: 36px;
+ width: 45px;
+ font-size: 10px;
+ padding: 0;    
 }
