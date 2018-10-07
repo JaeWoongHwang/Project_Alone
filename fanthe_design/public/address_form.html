@@ -29,6 +29,7 @@
 <!-- Body-->
 
 <body>
+  <!-- Header-->
   <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
   <header class="site-header navbar-sticky">
     <!-- Topbar-->
@@ -357,176 +358,116 @@
   <div class="page-title">
     <div class="container">
       <div class="column">
-        <h1>My Charity</h1>
+        <h1>새 주소 추가</h1>
       </div>
     </div>
   </div>
-  <div class="container padding-bottom-3x mb-2">
+    <!-- Page Content-->
+      <div class="container padding-bottom-3x mb-2">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+          <h6 class="text-muted text-lg text-uppercase">주소 입력</h6>
+          <hr class="margin-bottom-1x">
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="select-input">국가/지역</label>
+            <div class="col-10">
+              <select class="form-control" id="select-input">
+                <option>선택하세요.</option>
+                <option>United States</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>Korea, Republic of</option>
+              </select>
+            </div>
+          </div>      
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="text-input">주소 제목</label>
+            <div class="col-10">
+              <input class="form-control" type="text" id="text-input" value="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="text-input">주소</label>
+            <div class="col-10">
+              <input class="form-control" type="text" id="text-input" value="">
+              <input class="form-control mt-2" type="text" id="text-input" value="">    
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="text-input">도시</label>
+            <div class="col-10">
+              <input class="form-control" type="text" id="text-input" value="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="text-input">우편번호</label>
+            <div class="col-10">
+              <input class="form-control" type="text" id="text-input" value="">
+            </div>
+          </div>        
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="tel-input">전화번호</label>
+            <div class="col-10">
+              <input class="form-control" type="tel" id="tel-input" value="" placeholder="-없이 작성해주세요. 같은 형식 설명">
+            </div>
+          </div>
+          <div class="form-group row" id="address-add-block">
+            <a class="btn btn-primary btn-sm" href="profile_address.html">뒤로</a>
+            <a class="btn btn-primary btn-sm" href="#"> 주소 추가</a>                     
+          </div>
+          </div>
+        </div>
+      </div>
+ <!-- Site Footer-->
+<footer class="site-footer" style="background-image: url(img/footer-bg.png);">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-4">
-        <aside class="user-info-wrapper" id="user-info-block">
-          <div class="user-info">
-            <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="img/account/user-ava.jpg" alt="User"></div>
-            <div class="user-data">
-              <h4 class="h5">닉네임</h4><span>Joined February 06, 2017 (가입)</span>
-            </div>
-          </div>
-        </aside>
-        <nav class="list-group">
-          <a class="list-group-item" href="profile.html"><i class="icon-user"></i>My Profile</a>
-          <a class="list-group-item" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
-          <a class="list-group-item" href="profile_fanlog.html"><i class="icon-heart"></i>My Fanlog</a>
-          <a class="list-group-item active" href="profile_charity.html"><i class="icon-tag"></i>My Charity</a>
-          <a class="list-group-item" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
-          <a class="list-group-item" href="profile_address.html"><i class="icon-home"></i>My Address</a>
-          <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
-        </nav>
+      <div class="col-lg-3 col-md-6">
+        <section class="widget widget-links widget-light-skin">
+          <h3 class="widget-title">About Us</h3>
+          <ul>
+            <li><a href="#">FAN:charity</a></li>
+            <li><a href="#">What is the FAN:the?</a></li>
+            <li><a href="#">How FAN:the think?</a></li>
+          </ul>
+        </section>
       </div>
-      <!--Search Bar-->
-      <!--Charity Table-->
-      <div class="col-lg-8">
-        <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-        <ul class="nav nav-tabs" role="tablist"></ul>
-        <div class="tab-content">
-          <div class="tab-pane transition fade bottom show active" role="tabpanel">
-            <h6 class="search-result-title">기부현황</h6>
-            <hr class="padding-bottom-1x">
-            <div class="col-lg-12">
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead>
-                    <tr>
-                      <th>구분</th>
-                      <th>후원일자</th>
-                      <th>스타</th>
-                      <th>금액</th>
-                      <th>후원대상</th>
-                      <th>상태</th>
-                      <th>실시간 조회</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>2018/12/11</td>
-                      <td>아이유</td>
-                      <td>$760.50</td>
-                      <td>서울보육원</td>
-                      <td>완료</td>  
-                      <td><a href="#">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>2018/11/29</td>
-                      <td>설현</td>
-                      <td>$760.50</td>
-                      <td>서울보육원</td>
-                      <td>완료</td>  
-                      <td><a href="#">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>2018/11/21</td>
-                      <td>설리</td>
-                      <td>$760.50</td>
-                      <td>서울보육원</td>
-                      <td>진행중</td>  
-                      <td><a href="#">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>2018/11/10</td>
-                      <td>뉴이스트</td>
-                      <td>$760.50</td>
-                      <td>서울보육원</td>
-                      <td>진행중</td>  
-                      <td><a href="#">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>2018/11/10</td>
-                      <td>서현진</td>
-                      <td>$760.50</td>
-                      <td>미정</td>
-                      <td>-</td>  
-                      <td><a href="#">조회</a></td>
-                    </tr>  
-                  </tbody>
-                </table>
-              </div>
-              <hr>
-              <nav class="pagination">
-                <div class="column">
-                  <ul class="pages">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li>...</li>
-                    <li><a href="#">12</a></li>
-                  </ul>
-                </div>
-                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
-              </nav>
+      <div class="col-lg-3 col-md-6">
+        <section class="widget widget-links widget-light-skin">
+          <h3 class="widget-title">Information</h3>
+          <ul>
+            <li><a href="#">공지</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="col-lg-6">
+        <!-- Categories-->
+        <section class="widget widget-links widget-light-skin">
+          <!-- Mobile App Buttons-->
+          <section class="widget widget-light-skin">
+            <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#">
+              <span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a>
+            <a class="market-button google-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span>
+              <span class="mb-title">Google Play</span></a>
+            <div>
+              <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin"
+                href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-youtube"></i></a>
             </div>
-          </div>
-
-        </div>
+          </section>
+        </section>
       </div>
     </div>
+    <!-- Copyright-->
+    <p class="footer-copyright">© 2018 Beyond the Dream Corp. All rights reserved.</p>
   </div>
-
-  <!-- Site Footer-->
-  <footer class="site-footer" style="background-image: url(img/footer-bg.png);">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <section class="widget widget-links widget-light-skin">
-            <h3 class="widget-title">About Us</h3>
-            <ul>
-              <li><a href="#">FAN:charity</a></li>
-              <li><a href="#">What is the FAN:the?</a></li>
-              <li><a href="#">How FAN:the think?</a></li>
-            </ul>
-          </section>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <section class="widget widget-links widget-light-skin">
-            <h3 class="widget-title">Information</h3>
-            <ul>
-              <li><a href="#">공지</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="#">이벤트</a></li>
-            </ul>
-          </section>
-        </div>
-        <div class="col-lg-6">
-          <!-- Categories-->
-          <section class="widget widget-links widget-light-skin">
-            <!-- Mobile App Buttons-->
-            <section class="widget widget-light-skin">
-              <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#">
-                <span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a>
-              <a class="market-button google-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span>
-                <span class="mb-title">Google Play</span></a>
-              <div>
-                <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin"
-                  href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-youtube"></i></a>
-              </div>
-            </section>
-          </section>
-        </div>
-      </div>
-      <!-- Copyright-->
-      <p class="footer-copyright">© 2018 Beyond the Dream Corp. All rights reserved.</p>
-    </div>
-  </footer>
-  <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-chevron-up"></i></a>
-  <!-- Backdrop-->
-  <div class="site-backdrop"></div>
-  <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-  <script src="js/vendor.min.js"></script>
-  <script src="js/scripts.min.js"></script>
+</footer>
+<!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-chevron-up"></i></a>
+<!-- Backdrop-->
+<div class="site-backdrop"></div>
+<!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+<script src="js/vendor.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
-
 </html>

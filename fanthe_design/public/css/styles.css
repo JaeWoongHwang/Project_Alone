@@ -7535,8 +7535,8 @@ video {
   display: flex;
   position: relative;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 30px 40px;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
