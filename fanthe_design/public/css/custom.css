@@ -1,3 +1,6 @@
+th, td{
+ text-align: center;
+}
 /*Index Page */
 #navbar-fanthe-logo{
   padding-top: 0px;
@@ -61,7 +64,7 @@
 }
 .google-signin{
 }
-/*Sing Up Page  */
+/*Sing Up Page */
 #signup-card-wrapper{
   display: flex;
   flex-direction: row;
@@ -156,6 +159,15 @@
  padding-top: 10px;
  padding-bottom: 10px;
 }
+#precious-cash-table{
+ width: 670px;
+}
+#precious-point-table{
+ width: 670px;    
+}
+#precious-coupon-table{
+ width: 670px;   
+}
 /*Password Recovery Page*/
 #password-send-button{
  text-align: right;
@@ -174,11 +186,23 @@
 }
 /*Profile My Fanlog Page*/
 #check-period-block #small-button-fanlog{
- margin-right: 2px;
+ margin-right: 5px;
  height: 36px;
  width: 45px;
  font-size: 10px;
  padding: 0;    
+}
+#fanlog-post-table{
+ width: 670px;       
+}
+#fanlog-comment-table{
+ width: 670px;           
+}
+#fanlog-funding-table{
+ width: 670px;           
+}
+#fanlog-like-table{
+ width: 670px;           
 }
 /*Profile My Address Page*/
 #address-list-wrapper{
@@ -247,4 +271,24 @@
 /*Account Delete Page*/
 #account-delete-button{
  text-align: right;
+}
+/*Profile Charity Page*/
+#charity-result-table{
+ width: 670px;       
+}
+/*Profile Order Page*/
+#order-result-table{
+ width: 670px;           
+}
+/*Dormant Account Page*/
+#dormant-account-button{
+ background-color: #ffffff;
+ text-align: center;
+ border-top: none;    
+}
+#dormant-account-description{
+ font-size: 14px;
+}
+#dormant-account-question{
+ font-size: 14px;
 }
