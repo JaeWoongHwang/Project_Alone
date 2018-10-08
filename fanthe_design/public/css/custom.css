@@ -292,3 +292,10 @@ th, td{
 #dormant-account-question{
  font-size: 14px;
 }
+#dormant-account-cardheader{
+ background-color: #f4f4f4;
+ height: 50px;
+}
+#dormant-account-cardbody{
+ background-color: #f4f4f4;
+}

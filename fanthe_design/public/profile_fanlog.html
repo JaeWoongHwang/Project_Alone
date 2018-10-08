@@ -377,6 +377,7 @@
           <a class="list-group-item" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
           <a class="list-group-item active" href="profile_fanlog.html"><i class="icon-tag"></i>My Fanlog</a>
           <a class="list-group-item" href="profile_charity.html"><i class="icon-heart"></i>My Charity</a>
+          <a class="list-group-item" href="profile_funding.html"><i class="icon-award"></i>My Funding</a>
           <a class="list-group-item" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
           <a class="list-group-item" href="profile_address.html"><i class="icon-home"></i>My Address</a>
           <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
@@ -389,7 +390,9 @@
           <li class="nav-item"><a class="nav-link active" href="#user-post" data-toggle="tab" role="tab">작성글</a></li>
           <li class="nav-item"><a class="nav-link" href="#user-comment" data-toggle="tab" role="tab">댓글</a></li>
           <li class="nav-item"><a class="nav-link" href="#funding-comment" data-toggle="tab" role="tab">응모댓글</a></li>
-          <li class="nav-item"><a class="nav-link" href="#user-like" data-toggle="tab" role="tab">좋아요</a></li>
+          <li class="nav-item"><a class="nav-link" href="#user-like" data-toggle="tab" role="tab">공감</a></li>
+          <li class="nav-item"><a class="nav-link" href="#user-dislike" data-toggle="tab" role="tab">비공감</a></li>
+          <li class="nav-item"><a class="nav-link" href="#user-report" data-toggle="tab" role="tab">신고</a></li>
         </ul>
         <div class="tab-content">
           <!--User's Posts-->
@@ -668,6 +671,166 @@
                       <td>작성자</td>
                       <td>90</td>
                       <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <nav class="pagination">
+                <div class="column">
+                  <ul class="pages">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">8</a></li>
+                  </ul>
+                </div>
+                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
+              </nav>
+            </div>
+          </div>
+          <!--User's Dislike-->
+          <div class="tab-pane transition fade bottom" id="user-dislike" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="check-period-title">조회기간</p>
+                <div class="form-group" id="check-period-block">
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">오늘</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">1주일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">1개월</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">3개월</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">6개월</button>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 시작일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group" id="date-end-element">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 종료일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="detailed-check-block">
+                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
+              </div>
+            </div>
+            <h6 class="search-result-title">조회결과</h6>
+            <hr class="padding-bottom-1x">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0" id="fanlog-like-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>작성일</th>
+                      <th>제목</th>
+                      <th>작성자</th>
+                      <th>조회</th>
+                      <th>댓글</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2018/12/11</td>
+                      <td><a class="navi-link" href="#">글제목</a></td>
+                      <td>작성자</td>
+                      <td>90</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <nav class="pagination">
+                <div class="column">
+                  <ul class="pages">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">8</a></li>
+                  </ul>
+                </div>
+                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
+              </nav>
+            </div>
+          </div>
+          <!--User's Report-->
+          <div class="tab-pane transition fade bottom" id="user-report" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-4">
+                <p class="check-period-title">조회기간</p>
+                <div class="form-group" id="check-period-block">
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">오늘</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">1주일</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">1개월</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">3개월</button>
+                  <button class="btn btn-sm btn-secondary" type="button" id="small-button-fanlog">6개월</button>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 시작일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3" id="date-search-wrapper">
+                <div class="form-group" id="date-end-element">
+                  <div class="form-group" id="date-search-block">
+                    <p class="check-period-title">검색 종료일</p>
+                    <input class="form-control" type="date" id="date-input" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" id="detailed-check-block">
+                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
+              </div>
+            </div>
+            <h6 class="search-result-title">조회결과</h6>
+            <hr class="padding-bottom-1x">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0" id="fanlog-like-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>처리상태</th>
+                      <th>처리결과</th>
+                      <th>글제목</th>
+                      <th>신고사유</th>
+                      <th>작성자</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>처리중</td>
+                      <td>-</td>
+                      <td>방탄 거품아니냐?</td>
+                      <td>악의적 비하</td>
+                      <td>odk410</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>처리완료</td>
+                      <td>경고조치</td>
+                      <td>방탄 거품아니냐?</td>
+                      <td>욕설 비방</td>
+                      <td>odk410</td>
                     </tr>
                   </tbody>
                 </table>
