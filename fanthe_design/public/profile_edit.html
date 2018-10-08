@@ -358,7 +358,7 @@
   <div class="page-title">
     <div class="container">
       <div class="column">
-        <h1>My Profile 수정 페이지</h1>
+        <h1>My Profile 수정</h1>
       </div>
     </div>
   </div>
@@ -376,8 +376,8 @@
         <nav class="list-group">
           <a class="list-group-item active" href="profile.html"><i class="icon-user"></i>My Profile</a>
           <a class="list-group-item" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
-          <a class="list-group-item" href="profile_fanlog.html"><i class="icon-heart"></i>My Fanlog</a>
-          <a class="list-group-item" href="profile_charity.html"><i class="icon-tag"></i>My Charity</a>
+          <a class="list-group-item" href="profile_fanlog.html"><i class="icon-tag"></i>My Fanlog</a>
+          <a class="list-group-item" href="profile_charity.html"><i class="icon-heart"></i>My Charity</a>
           <a class="list-group-item" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
           <a class="list-group-item" href="profile_address.html"><i class="icon-home"></i>My Address</a> 
           <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
@@ -385,95 +385,67 @@
       </div>
       <div class="col-lg-8">
         <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-        <form class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-email">보조 이메일</label>
-              <input class="form-control" type="email" id="account-email" value="daniel.adams@mail.com">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-pass">현재 비밀번호</label>
-              <input class="form-control" type="password" id="account-pass">
-            </div>
-          </div>
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-pass">새 비밀번호</label>
-              <input class="form-control" type="password" id="account-pass">
-            </div>
-          </div>
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="account-confirm-pass">새 비밀번호 확인</label>
-              <input class="form-control" type="password" id="account-confirm-pass">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-            </div>
-          </div>
+        <ul class="nav nav-tabs" role="tablist"></ul>
+        <div class="tab-content">
+          <div class="tab-pane transition fade bottom show active" role="tabpanel">
+            <form class="row">
+          <div class="col-md-3"></div>    
           <div class="col-md-6">
             <div class="form-group">
               <label for="account-fn">닉네임</label>
               <input class="form-control" type="text" id="account-fn" value="Daniel" required>
             </div>
           </div>
+          <div class="col-md-3"></div>        
+          <div class="col-md-3"></div>    
           <div class="col-md-6">
             <div class="form-group">
-              <label for="account-fn">이름</label>
-              <input class="form-control" type="text" id="account-fn" value="Daniel" required>
+              <label for="account-pass">현재 비밀번호</label>
+              <input class="form-control" type="password" id="account-pass">
             </div>
           </div>
+          <div class="col-md-3"></div>        
+          <div class="col-md-3"></div>    
           <div class="col-md-6">
             <div class="form-group">
-              <label for="account-phone">전화번호</label>
-              <input class="form-control" type="text" id="account-phone" value="+7 (805) 348 95 72" required>
+              <label for="account-pass">새 비밀번호</label>
+              <input class="form-control" type="password" id="account-pass">
             </div>
           </div>
+          <div class="col-md-3"></div>    
+          <div class="col-md-3"></div>        
           <div class="col-md-6">
             <div class="form-group">
-              <label for="data-input">생년월일</label>
-              <input class="form-control" type="date" id="date-input" value="2017-06-13">
+              <label for="account-confirm-pass">새 비밀번호 확인</label>
+              <input class="form-control" type="password" id="account-confirm-pass">
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-3"></div>        
+          <div class="col-md-3"></div>    
+          <div class="col-md-6">
             <div class="form-group">
-              <label for="account-address1">주소</label>
-              <input class="form-control" type="text" id="account-address1" required>
-            </div>
-          </div>
-          <div class="col-md-5" id="detailed-address">
-            <div class="form-group">
-              <label for="account-address2">상세 주소</label>
-              <input class="form-control" type="text" id="account-address2">
-            </div>
-          </div>
-          <div class="col-md-2" id="address-search-wrapper">
-            <button class="btn btn-secondary" type="button" id="address-search-button">주소 검색</button>
-          </div>
-          <div class="col-12">
-            <hr class="mt-2 mb-3">
-            <div class="d-flex flex-wrap justify-content-between align-items-center" id="profile-social-wrapper">
-              <div class="custom-control custom-checkbox d-block">
-                <input class="custom-control-input" type="checkbox" id="subscribe_me" checked>
-                <label class="custom-control-label" for="subscribe_me">뉴스레터 구독을 동의합니다.</label>
-              </div>
+              <label for="">SNS 연동</label>
               <div class="profile-social-block">
                 <a class="kakao-signin" href="#"><img src="img/logo/kakao_logo.png" id="kakao_logo"></a>
                 <a class="line-signin" href="#"><img src="img/logo/line_logo.png" id="line_logo"></a>
                 <a class="twitter-signin" href="#"><img src="img/logo/twitter_logo.png" alt=""></a>
                 <a class="weibo-signin" href="#"><img src="img/logo/weibo_logo.png" alt=""></a>
                 <a class="google-signin" href="#"><img src="img/logo/google_logo.png" alt=""></a>
+              </div>
+            </div>
+          </div>         
+          <div class="col-md-3"></div>        
+          <div class="col-md-3"></div>
+          <div class="col-md-6"><a href="account_delete.html">회원탈퇴</a></div>    
+          <div class="col-md-3"></div>            
+        </form>  
+          </div>
+        </div>
+          <div class="col-12 mt-2 pl-0">
+            <div class="d-flex flex-wrap justify-content-between align-items-center" id="profile-social-wrapper">
+              <div class="custom-control custom-checkbox d-block">  
+                <input class="custom-control-input" type="checkbox" id="subscribe_me" checked>
+                <label class="custom-control-label" for="subscribe_me">뉴스레터 구독을 동의합니다.</label>
               </div>
             </div>
           </div>
@@ -483,8 +455,8 @@
               <button class="btn btn-primary margin-right-none" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="icon-check-circle" data-toast-title="프로필 내용이" data-toast-message="수정 되었습니다.">완료</button>
             </div>
           </div>
-        </form>
-      </div>
+      </div>    
+
     </div>
   </div>
   <!-- Site Footer-->

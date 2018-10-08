@@ -89,16 +89,6 @@
   justify-content: center;
   align-items: center;
 }
-/*Register Page*/
-#register-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;  
-}
-.register-empty-block{
-  height: 20px;
-}
 /*Profile Page*/
 #profile-social-wrapper{
   display: flex;
@@ -113,7 +103,6 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
 }
 #address-search-wrapper{
   display: flex;
@@ -166,6 +155,10 @@
 #user-info-block{
  padding-top: 10px;
  padding-bottom: 10px;
+}
+/*Password Recovery Page*/
+#password-send-button{
+ text-align: right;
 }
 /*Password Reset Page*/
 #password-form-wrapper{
@@ -222,10 +215,14 @@
 .address-data-block{
  height: 80%;
  overflow: hidden;
- padding-bottom: 10px;    
+ padding-bottom: 20px;    
 }
 .address-function-block{
  height: 20%;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
 }
 .address-list-li{
  list-style: none;
@@ -235,5 +232,19 @@
 }
 #address-list-card{
  padding-right: 0;
- padding-bottom: 5px;
+ padding-left: 15px;
+ padding-bottom: 10px;
+}
+.address-list-div{
+ width:100%;
+ height: 22px;
+ overflow: hidden;   
+}
+.address-function-button{
+ text-decoration: none;
+ margin-right: 12px;
+}
+/*Account Delete Page*/
+#account-delete-button{
+ text-align: right;
 }

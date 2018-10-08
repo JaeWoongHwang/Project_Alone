@@ -29,67 +29,7 @@
 <!-- Body-->
 
 <body>
-  <!--Order Detail Modal-->
-  <div class="modal fade" id="orderDetails" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">주문번호 : 34VB5540K83</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <div class="table-responsive shopping-cart mb-0">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>상품명</th>
-                  <th class="text-center">합계</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
-                      <div class="product-info">
-                        <h4 class="product-title"><a href="shop-single.html">아이돌 굿즈<small>x 1</small></a></h4><span><em>타입:</em> 펀딩 A세트</span><span><em>옵션:</em> 옵션 내용</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="text-center text-lg">$910.00</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/02.jpg" alt="Product"></a>
-                      <div class="product-info">
-                        <h4 class="product-title"><a href="shop-single.html">아이돌 굿즈<small>x 2</small></a></h4><span><em>타입:</em> 펀딩 B세트</span><span><em>옵션:</em> 옵션내용</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="text-center text-lg">$1,450.00</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/03.jpg" alt="Product"></a>
-                      <div class="product-info">
-                        <h4 class="product-title"><a href="shop-single.html">아이돌 굿즈<small>x 1</small></a></h4><span><em>타입:</em> 펀딩 C세트</span><span><em>옵션:</em> 옵션내용</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="text-center text-lg">$188.50</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <hr class="mb-3">
-          <div class="d-flex flex-wrap justify-content-between align-items-center pb-2">
-            <div class="px-2 py-1"><span class='text-muted'>상품가격:</span> <span class='text-gray-dark'>$2,548.50</span></div>
-            <div class="px-2 py-1"><span class='text-muted'>배송료:</span> <span class='text-gray-dark'>$26.50</span></div>
-            <div class="text-lg px-2 py-1"><span class='text-muted'>총 합계:</span> <span class='text-gray-dark'>$2,584.72</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Header-->
   <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
   <header class="site-header navbar-sticky">
     <!-- Topbar-->
@@ -418,159 +358,63 @@
   <div class="page-title">
     <div class="container">
       <div class="column">
-        <h1>My Order</h1>
+        <h1>회원탈퇴</h1>
       </div>
     </div>
   </div>
+  <!-- Page Content-->
   <div class="container padding-bottom-3x mb-2">
-    <div class="row">
-      <div class="col-lg-4">
-        <aside class="user-info-wrapper" id="user-info-block">
-          <div class="user-info">
-            <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="img/account/user-ava.jpg" alt="User"></div>
-            <div class="user-data">
-              <h4 class="h5">닉네임</h4><span>Joined February 06, 2017 (가입)</span>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <h4>탈퇴 안내</h4>
+        <div class="accordion" id="accordion" role="tablist">
+          <div class="card">
+            <div class="card-header" role="tab">
+              <h6><a href="#collapseOne" data-toggle="collapse">탈퇴 약관</a></h6>
+            </div>
+            <div class="collapse" id="collapseOne" data-parent="#accordion" role="tabpanel">
+              <div class="card-body">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                  ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                  velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, harum. Asperiores mollitia sed ullam quae blanditiis explicabo, reprehenderit sint rerum, labore, fugit obcaecati laboriosam nulla voluptatem inventore nobis esse
+                  nemo.</p>
+              </div>
             </div>
           </div>
-        </aside>
-        <nav class="list-group">
-          <a class="list-group-item" href="profile.html"><i class="icon-user"></i>My Profile</a>
-          <a class="list-group-item" href="profile_precious.html"><i class="icon-shopping-bag"></i>My Precious</a>
-          <a class="list-group-item" href="profile_fanlog.html"><i class="icon-tag"></i>My Fanlog</a>
-          <a class="list-group-item" href="profile_charity.html"><i class="icon-heart"></i>My Charity</a>
-          <a class="list-group-item active" href="profile_order.html"><i class="icon-map-pin"></i>My Order</a>
-          <a class="list-group-item" href="profile_address.html"><i class="icon-home"></i>My Address</a>
-          <a class="list-group-item" href="faq.html"><i class="icon-settings"></i>1:1 문의</a>
-        </nav>
-      </div>
-      <!--Search Bar-->
-
-
-      <!--Order Table-->
-      <div class="col-lg-8">
-        <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-        <ul class="nav nav-tabs" role="tablist"></ul>
-        <div class="tab-content">
-          <!--FAN:the Cash-->
-          <div class="tab-pane transition fade bottom show active" id="fanthe-cash" role="tabpanel">
-            <div class="row">
-              <div class="col-sm-4">
-                <p class="check-period-title">조회기간</p>
-                <div class="form-group" id="check-period-block">
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1주일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">15일</button>
-                  <button class="btn btn-sm btn-secondary" type="button" id="small-button">1개월</button>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 시작일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3" id="date-search-wrapper">
-                <div class="form-group" id="date-end-element">
-                  <div class="form-group" id="date-search-block">
-                    <p class="check-period-title">검색 종료일</p>
-                    <input class="form-control" type="date" id="date-input" value="">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group" id="detailed-check-block">
-                <button class="btn btn-sm btn-secondary" type="button" id="small-button">검색</button>
-              </div>
-            </div>
-            <h6 class="search-result-title">조회결과</h6>
-            <hr class="padding-bottom-1x">
-            <div class="col-lg-12">
-              <div class="table-responsive">
-                <table class="table table-hover mb-0">
-                  <thead>
-                    <tr>
-                      <th>주문번호</th>
-                      <th>주문날짜</th>
-                      <th>상품정보</th>
-                      <th>상품금액(수량)</th>
-                      <th>진행상태</th>
-                      <th>배송정보</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a class="navi-link" href="" data-toggle="modal" data-target="#orderDetails">159159WQ13</a></td>
-                      <td>2018/12/11</td>
-                      <td><span>아이돌 피규어</span></td>
-                      <td><span class="text-danger">$760.50</span></td>
-                      <td>배송대기</td>
-                      <td><a href="order_tracking.html">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="" data-toggle="modal" data-target="#orderDetails">288098SAA</a></td>
-                      <td>2018/11/29</td>
-                      <td><span>아이돌 피규어</span></td>
-                      <td><span class="text-danger">$315.20</span></td>
-                      <td>배송중</td>
-                      <td><a href="order_tracking.html">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="" data-toggle="modal" data-target="#orderDetails">3288098S0</a></td>
-                      <td>2018/11/28</td>
-                      <td><span>아이돌 피규어</span></td>
-                      <td><span class="text-danger">$315.20</span></td>
-                      <td>배송완료</td>
-                      <td><a href="order_tracking.html">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="" data-toggle="modal" data-target="#orderDetails">4684684557</a></td>
-                      <td>2018/11/16</td>
-                      <td><span>아이돌 피규어</span></td>
-                      <td><span class="text-danger">$198.35</span></td>
-                      <td>배송완료</td>
-                      <td><a href="order_tracking.html">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="" data-toggle="modal" data-target="#orderDetails">5468446846</a></td>
-                      <td>2018/11/11</td>
-                      <td><span>아이돌 피규어</span></td>
-                      <td><span class="text-danger">$2,133.90</span></td>
-                      <td>배송완료</td>
-                      <td><a href="order_tracking.html">조회</a></td>
-                    </tr>
-                    <tr>
-                      <td><a class="navi-link" href="" data-toggle="modal" data-target="#orderDetails">6784846688</a></td>
-                      <td>2018/11/7</td>
-                      <td><span>아이돌 피규어</span></td>
-                      <td><span class="text-danger">$86.40</span></td>
-                      <td>배송완료</td>
-                      <td><a href="order_tracking.html">조회</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <hr>
-              <nav class="pagination">
-                <div class="column">
-                  <ul class="pages">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li>...</li>
-                    <li><a href="#">12</a></li>
-                  </ul>
-                </div>
-                <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">다음&nbsp;<i class="icon-chevron-right"></i></a></div>
-              </nav>
-            </div>
+          <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="ex-check-1">
+            <label class="custom-control-label" for="ex-check-1">안내 사항을 모두 확인하였으며, 이에 동의합니다.</label>
           </div>
-
         </div>
+        <form class="card mt-4">
+          <div class="card-body">
+            <div class="form-group">
+            <label for="#">팬더를 탈퇴하시는 이유는 무엇인가요?</label>
+            <div class="col-14">
+              <select class="form-control" id="select-input">
+                <option>이유를 선택해주세요.</option>
+                <option>서비스 기능 불편</option>
+                <option>서비스 정책 불만</option>
+                <option>제재조치로 이용제한됨</option>
+                <option>이벤트 등의 목적으로 한시 사용함</option>
+                <option>기타</option>
+              </select>
+            </div>
+            </div>  
+            <div class="form-group">
+              <label for="email-for-pass">팬더가 개선해야 할 부분을 알려주세요.</label>
+              <input class="form-control" type="text" id="email-for-pass">
+            </div>
+          </div>
+          <div class="card-footer" id="account-delete-button">
+            <a class="btn btn-primary btn-sm" href="profile_edit.html">취소</a>
+            <a class="btn btn-primary btn-sm" href="index.html">탈퇴 완료</a>    
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
   <!-- Site Footer-->
   <footer class="site-footer" style="background-image: url(img/footer-bg.png);">
     <div class="container">
