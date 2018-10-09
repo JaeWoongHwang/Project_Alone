@@ -366,32 +366,28 @@
   <div class="page-title">
     <div class="container">
       <div class="column">
-        <h1>휴면계정 재사용</h1>
+        <h1>회원 탈퇴</h1>
       </div>
     </div>
   </div>
-  <!--Page Content-->
-  <div class="container padding-bottom-2x mb-2" id="dormant-account-wrapper">
-    <div class="row justify-content-center">
-      <div class="container padding-bottom-3x mb-2">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-            <h4>000님의 휴면 해제를 위해 본인확인이 필요합니다.</h4>
-            <p>가입시 인증했던 이메일을 입력해주세요.</p>
-            <form class="card mt-4">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="email-for-pass">이메일 주소를 입력하세요.</label>
-                  <input class="form-control" type="text" id="email-for-pass" required><small class="form-text text-muted">회원가입시 인증했던 이메일을 입력하셔야 합니다.</small>
-                </div>
-              </div>
-              <div class="card-footer" id="password-send-button">
-                <a class="btn btn-primary btn-sm" href="dormant_account.html">뒤로</a>
-                <a class="btn btn-primary btn-sm" href="dormant_account_completed.html">인증메일 발송</a>
-              </div>
-            </form>
+  <div class="container padding-bottom-3x mb-2">
+    <div class="row" id="signin-card-wrapper">
+      <div class="col-md-6">
+        <form class="card" method="post">
+          <div class="card-body">
+            <div class="row margin-bottom-1x" id="signin-logo">
+              <img src="img/logo/signin_logo.png" alt="">
+            </div>
+            <h6 class="padding-top-1x" id="password-confirm-title">비밀번호 확인</h6>
+            <p class="text-muted mb-2 mt-2 ">회원님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 확인합니다.</p>
+            <div class="form-group input-group">
+              <input class="form-control" type="password" placeholder="비밀번호" required><span class="input-group-addon"><i class="icon-lock"></i></span>
+            </div>
+            <div class="text-center text-sm-right">
+              <a class="btn btn-primary margin-bottom-none" href="index.html">탈퇴 완료</a>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

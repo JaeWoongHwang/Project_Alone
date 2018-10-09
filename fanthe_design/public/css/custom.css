@@ -299,3 +299,83 @@ th, td{
 #dormant-account-cardbody{
  background-color: #f4f4f4;
 }
+#dormant-account-card{
+ border: none;    
+}
+#dormant-account-title{
+ text-align: center;
+}
+/*Project Detail Page*/
+#project-percent-block{
+ width: 50%;    
+}
+#project-block-wrapper{
+ width: 340px;
+}
+#project-count-block{
+ width: 50%;
+ text-align: right;
+}
+#project-funding-button{
+ width: 340px;
+}
+#project-progress-bar{
+ height: 14px;
+ width: 340px;    
+}
+#project-community-container{
+ display: flex;
+ justify-content: center;
+}
+#project-comment-body{
+ padding: 10px 10px;
+ min-width: 350px;
+ max-width: 600px;
+}
+.project-comment-wrapper{
+ height: 100%;
+ width: 80%;
+}
+#comment-button-block{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+}
+#comment-button-block div{
+ padding-right: 10px;
+}
+#comment-function-block{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+ margin-top: 4px;
+ color: #55ADEE;
+}
+#comment-function-block div{
+ padding-right: 10px;    
+}
+#project-comment-header{
+ padding-right: 0px;
+ width: 55%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+#project-comment-textarea{
+ display: blok;
+ width: 90%;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+#project-comment-submit{
+ width: 10%;
+}
+#project-comment-inputbox{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding: 0px;
+ margin-right: 0px;    
+}

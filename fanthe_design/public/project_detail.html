@@ -362,90 +362,181 @@
       </nav>
     </div>
   </header>
-  <!-- Page Title-->
-  <div class="page-title">
-    <div class="container">
-      <div class="column">
-        <h1>휴면계정 재사용</h1>
+    <!-- Page Title-->
+    <div class="page-title">
+      <div class="container">
+        <div class="column">
+          <h1>프로젝트 상세 페이지</h1>
+        </div>
       </div>
-    </div>
-  </div>
-  <!--Page Content-->
-  <div class="container padding-bottom-2x mb-2" id="dormant-account-wrapper">
-    <div class="row justify-content-center">
-      <div class="container padding-bottom-3x mb-2">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-            <h4>000님의 휴면 해제를 위해 본인확인이 필요합니다.</h4>
-            <p>가입시 인증했던 이메일을 입력해주세요.</p>
-            <form class="card mt-4">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="email-for-pass">이메일 주소를 입력하세요.</label>
-                  <input class="form-control" type="text" id="email-for-pass" required><small class="form-text text-muted">회원가입시 인증했던 이메일을 입력하셔야 합니다.</small>
-                </div>
+    </div>    
+    <div class="container padding-bottom-2x">
+      <div class="row">
+        <!-- Poduct Gallery-->
+        <div class="col-md-6">
+          <div class="product-gallery">
+            <div class="gallery-wrapper">
+              <div class="gallery-item video-btn text-center"></div>
+            </div>
+            <div class="product-carousel owl-carousel gallery-wrapper">
+              <div class="gallery-item" data-hash="one"><a href="img/shop/single/01.jpg" data-size="1000x667"><img src="img/shop/single/01.jpg" alt="Product"></a></div>
+              <div class="gallery-item" data-hash="two"><a href="img/shop/single/02.jpg" data-size="1000x667"><img src="img/shop/single/02.jpg" alt="Product"></a></div>
+              <div class="gallery-item" data-hash="three"><a href="img/shop/single/03.jpg" data-size="1000x667"><img src="img/shop/single/03.jpg" alt="Product"></a></div>
+              <div class="gallery-item" data-hash="four"><a href="img/shop/single/04.jpg" data-size="1000x667"><img src="img/shop/single/04.jpg" alt="Product"></a></div>
+              <div class="gallery-item" data-hash="five"><a href="img/shop/single/05.jpg" data-size="1000x667"><img src="img/shop/single/05.jpg" alt="Product"></a></div>
+            </div>
+            <ul class="product-thumbnails">
+              <li class="active"><a href="#one"><img src="img/shop/single/th01.jpg" alt="Product"></a></li>
+              <li><a href="#two"><img src="img/shop/single/th02.jpg" alt="Product"></a></li>
+              <li><a href="#three"><img src="img/shop/single/th03.jpg" alt="Product"></a></li>
+              <li><a href="#four"><img src="img/shop/single/th04.jpg" alt="Product"></a></li>
+              <li><a href="#five"><img src="img/shop/single/th05.jpg" alt="Product"></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Product Info-->
+        <div class="col-md-6">
+          <div class="padding-top-2x mt-2 hidden-md-up"></div>
+          <div class="sp-categories pb-3"><i class="icon-tag"></i><a href="#">프로젝트 카테고리</a></div>
+          <h2 class="mb-2">프로젝트 이름</h2>
+          <span class="h5 d-block mb-2">프로젝트 소개</span>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatibus quos ea dolore rem, molestias laudantium et explicabo...</p> 
+            <div class="text-block-wrapper" id="project-block-wrapper">
+              <div class="text-rate-block" id="project-percent-block">
+                  <label class="text-gray-dark">퍼센트</label>
               </div>
-              <div class="card-footer" id="password-send-button">
-                <a class="btn btn-primary btn-sm" href="dormant_account.html">뒤로</a>
-                <a class="btn btn-primary btn-sm" href="dormant_account_completed.html">인증메일 발송</a>
+              <div class="text-count-block" id="project-count-block">
+                  <label class="text-gray-dark">응모 수 표기</label>
               </div>
-            </form>
+            </div>    
+           <div class="progress mb-2" id="project-progress-bar">
+             <div class="progress-bar progress-bar-striped progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria- valuemin="0" aria-valuemax="100"></div>
+           </div>
+           <div class="text-block-wrapper" id="project-block-wrapper">
+              <div class="text-rate-block" id="project-percent-block">
+                <label class="text-gray-dark">참여자 수</label>
+              </div>
+              <div class="text-count-block" id="project-count-block">
+                <label class="text-gray-dark">남은일자</label>
+              </div>
+            </div>        
+          <div class="row margin-top-1x">  
+          </div>
+          <div class="row align-item-end pb-4" >
+            <div class="col-sm-8">
+              <div class="pt-4 hidden-sm-up"></div>
+                <button class="btn btn-primary btn-block m-0" id="project-funding-button"><i class="icon-bag"></i> 펀딩 참여하기</button>
+            </div>
+          </div>
+          <hr class="mb-2">
+          <div class="d-flex flex-wrap justify-content-between">
+            <div class="mt-2 mb-2"><span class="text-muted">Share:&nbsp;&nbsp;</span>
+              <div class="d-inline-block">
+                  <a class="social-button shape-rounded sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                      <i class="socicon-facebook"></i>
+                  </a>
+                  <a class="social-button shape-rounded sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+                      <i class="socicon-twitter"></i>
+                  </a>
+                  <a class="social-button shape-rounded sb-instagram" href="#" data-toggle="tooltip" data-placement="top" title="Instagram">
+                      <i class="socicon-instagram"></i>
+                  </a>
+                  <a class="social-button shape-rounded sb-weibo" href="#" data-toggle="tooltip" data-placement="top" title="Weibo">
+                      <i class="socicon-weibo"></i>
+                  </a>
+                  <a class="social-button shape-rounded sb-google-plus" href="#" data-toggle="tooltip" data-placement="top" title="Google +">
+                      <i class="socicon-googleplus"></i>
+                  </a>
+                  <a class="social-button shape-rounded sb-pinterest" href="#" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                      <i class="socicon-pinterest"></i>
+                  </a> 
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Site Footer-->
-  <footer class="site-footer" style="background-image: url(img/footer-bg.png);">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <section class="widget widget-links widget-light-skin">
-            <h3 class="widget-title">About Us</h3>
-            <ul>
-              <li><a href="#">FAN:charity</a></li>
-              <li><a href="#">What is the FAN:the?</a></li>
-              <li><a href="#">How FAN:the think?</a></li>
-            </ul>
-          </section>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <section class="widget widget-links widget-light-skin">
-            <h3 class="widget-title">Information</h3>
-            <ul>
-              <li><a href="#">공지</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="#">이벤트</a></li>
-            </ul>
-          </section>
-        </div>
-        <div class="col-lg-6">
-          <!-- Categories-->
-          <section class="widget widget-links widget-light-skin">
-            <!-- Mobile App Buttons-->
-            <section class="widget widget-light-skin">
-              <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#">
-                <span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a>
-              <a class="market-button google-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span>
-                <span class="mb-title">Google Play</span></a>
-              <div>
-                <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin"
-                  href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-youtube"></i></a>
+    <!-- Product Details-->
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+        <li class="nav-item"><a class="nav-link active" href="#description" data-toggle="tab" role="tab">프로젝트 소개</a></li>
+        <li class="nav-item"><a class="nav-link" href="#community" data-toggle="tab" role="tab">커뮤니티</a></li>
+        <li class="nav-item"><a class="nav-link" href="#notice" data-toggle="tab" role="tab">환불 및 교환</a></li>
+    </ul>
+    <div class="tab-content">
+       <div class="tab-pane fade show active" id="description" role="tabpanel">
+          <div class="bg-white padding-top-3x padding-bottom-2x mb-3" id="details">
+              <div class="container">
+                <div class="row">
+                </div>
               </div>
-            </section>
-          </section>
+          </div>
         </div>
+        <div class="tab-pane fade" id="community" role="tabpanel">
+          <div class="bg-white padding-top-1x padding-bottom-2x mb-3" id="details">
+              <div class="container" id="project-community-container">
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="notice" role="tabpanel">
+          <div class="bg-white padding-top-3x padding-bottom-2x mb-3" id="details">
+              <div class="container">
+                <div class="row">
+                </div>
+              </div>
+          </div>
+        </div>
+   </div>
+<!-- Site Footer-->
+<footer class="site-footer" style="background-image: url(img/footer-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <section class="widget widget-links widget-light-skin">
+          <h3 class="widget-title">About Us</h3>
+          <ul>
+            <li><a href="#">FAN:charity</a></li>
+            <li><a href="#">What is the FAN:the?</a></li>
+            <li><a href="#">How FAN:the think?</a></li>
+          </ul>
+        </section>
       </div>
-      <!-- Copyright-->
-      <p class="footer-copyright">© 2018 Beyond the Dream Corp. All rights reserved.</p>
+      <div class="col-lg-3 col-md-6">
+        <section class="widget widget-links widget-light-skin">
+          <h3 class="widget-title">Information</h3>
+          <ul>
+            <li><a href="#">공지</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="col-lg-6">
+        <!-- Categories-->
+        <section class="widget widget-links widget-light-skin">
+          <!-- Mobile App Buttons-->
+          <section class="widget widget-light-skin">
+            <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#">
+              <span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a>
+            <a class="market-button google-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span>
+              <span class="mb-title">Google Play</span></a>
+            <div>
+              <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin"
+                href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-youtube"></i></a>
+            </div>
+          </section>
+        </section>
+      </div>
     </div>
-  </footer>
-  <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-chevron-up"></i></a>
-  <!-- Backdrop-->
-  <div class="site-backdrop"></div>
-  <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-  <script src="js/vendor.min.js"></script>
-  <script src="js/scripts.min.js"></script>
+    <!-- Copyright-->
+    <p class="footer-copyright">© 2018 Beyond the Dream Corp. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-chevron-up"></i></a>
+<!-- Backdrop-->
+<div class="site-backdrop"></div>
+<!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+<script src="js/vendor.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
