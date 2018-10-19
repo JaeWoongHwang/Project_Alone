@@ -1,14 +1,21 @@
-<div class="index_top">
+<section id="eu" class="page1">
+  <h2>Europe</h2>
+</section>
+<section id="us" class="page2">
+  <h2>United States</h2>
+</section>
+<section id="ch" class="page3">
+  <h2>China</h2>
+</section>
+<section id="jp" class="page4">
+  <h2>Japan</h2>
+</section>
 
-</div>
-
-<div class="index_wrapper">
-  <div class="text_column">
-    <div class="text_block">
-      <h2 class="text_header">"Beyond the Dream"</h2>
-      <p class="text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
-    </div>
-  </div>
-  <div class="image_column">
-  </div>
-</div>
+<script>
+  $(function(){
+    $('nav a').click(function(e){
+      $.scrollTo(this.hash || 0, 1500);
+      e.preventDefault();
+    });
+  });
+</script>
