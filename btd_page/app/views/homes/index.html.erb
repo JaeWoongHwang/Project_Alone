@@ -1,21 +1,18 @@
-<section id="eu" class="page1">
-  <h2>Europe</h2>
-</section>
-<section id="us" class="page2">
-  <h2>United States</h2>
-</section>
-<section id="ch" class="page3">
-  <h2>China</h2>
-</section>
-<section id="jp" class="page4">
-  <h2>Japan</h2>
-</section>
-
+		<section id="sky" data-type="background" data-speed="0.5">
+			<article>
+        <%= image_tag "balloon.png" %>
+      </article>
+		</section>
 <script>
-  $(function(){
-    $('nav a').click(function(e){
-      $.scrollTo(this.hash || 0, 1500);
-      e.preventDefault();
+  $(document).ready(function(){
+    var wd = $(window);
+    $('section[data-type="background"]').each(function(){
+      var bg =$(this);
+      $(window).scroll(function(){
+        var yPos = -(wd.scrollTop()/bg.data('speed'));
+        var coords = '50%' + yPos + 'px';
+        bg.css({backgroundPosition:coords});
+      });
     });
   });
 </script>
