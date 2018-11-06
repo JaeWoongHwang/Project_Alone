@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      .email_form_wrapper{
-        width: 1000px;
-        height: 600px;
-        background-color: #e1e1e1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-        
-      .email_form_block{
-        width: 678px;
-        height: 403px;
-        background-color: #ffffff;
-      }
-      .email_form_header{
-        width: 100%;
-        height: 75px;
-        border-bottom: 1px solid #e5e5e5;
-      }
 
-      .email_form_body{
-        width: 100%;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>FAN:the email form</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <style>
+    .email_form_wrapper {
+      width: 1206px;
+      height: 600px;
+      background-color: #e1e1e1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .email_form_footer{
+    .email_form_block {
+      width: 678px;
+      height: 403px;
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 10px 6px -6px #777;
+      -moz-box-shadow: 0 10px 6px -6px #777;
+      box-shadow: 0 10px 6px -6px #777;
+    }
 
-      }
-    </style>
-  </head>
-  <body>
-    <div class="email_form_wrapper">
-     <div class="email_form_block">
+    .email_form_header {
+      width: 100%;
+      height: 60px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .email_form_body {
+      max-width: 100%;
+      max-height: 100%;
+      text-align: left;
+      padding: 30px 30px;
+    }
+
+    .email_form_body table {
+      font-size: 16px;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .email_form_body p {
+      margin: 10px 20px;
+    }
+
+    #logo {
+      position: absolute;
+      top: 7.5rem;
+      left: 18.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email_form_wrapper">
+    <div class="email_form_block">
       <div class="email_form_header">
+        <img src="image/small_logo.png" alt="fanthe" id="logo">
       </div>
       <div class="email_form_body">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <p>username</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>content</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>footer</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="email_form_footer">
-      </div>   
-     </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
