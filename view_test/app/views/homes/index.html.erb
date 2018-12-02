@@ -1,0 +1,191 @@
+<script language=javascript>
+  $(document).on("turbolinks:load", function(){
+    var appAmt = NulltoZero(document.all["tot_amt"].value).replace(/,/g, '');
+    var tot_amt = Math.floor( parseInt(appAmt)) ;
+    var cal_vat_amt = Math.floor( parseInt(appAmt)*(1/11)) ;
+    var cal_tax_amt = appAmt - cal_vat_amt;
+    var cal_free_amt=  0;
+
+    document.all["tot_amt"].value = tot_amt;
+    document.all["com_tax_amt"].value = cal_tax_amt;
+    document.all["com_free_amt"].value = cal_free_amt
+    document.all["com_vat_amt"].value = cal_vat_amt
+  });
+
+  function NulltoZero(p_param){
+    if(p_param ==''){
+      return '0';
+    } else{
+      return p_param;
+    }
+  };
+
+  function checkSubmitValue(targetFormObj){
+    if(targetFormObj.tot_amt.value=="" || targetFormObj.tot_amt.value <= "0"){
+      alert('결제금액이 잘못되었습니다.');
+      targetFormObj.tot_amt.focus();
+
+      return false;
+    }
+
+      var tpTotAmt  = NulltoZero(targetFormObj.tot_amt.value);
+      var tpTaxAmt  = NulltoZero(targetFormObj.com_tax_amt.value);
+      var tpFreeAmt = NulltoZero(targetFormObj.com_free_amt.value);
+      var tpVatAmt  = NulltoZero(targetFormObj.com_vat_amt.value);
+
+      var nmTotAmt =   Number(tpTotAmt);
+      var nmTaxAmt =   Number(tpTaxAmt);
+      var nmFreeAmt =  Number(tpFreeAmt);
+      var nmVatAmt =   Number(tpVatAmt);
+
+      if( nmTotAmt != (nmTaxAmt+nmFreeAmt+nmVatAmt)){
+         alert("결제금액이 잘못되었습니다.");
+         return false;
+      }
+
+    if(targetFormObj.order_no.value==""){
+      alert('상점주문번호가 잘못되었습니다.');
+      targetFormObj.order_no.focus();
+
+      return false;
+    }
+
+       if(targetFormObj.name.value==""){
+            alert('고객명이 잘못되었습니다.');
+            targetFormObj.name.focus();
+
+          return false;
+       }
+
+      if(targetFormObj.number.value == ""){
+         alert('카드번호를 입력하세요.');
+         targetFormObj.number.focus();
+
+         return false;
+      }
+    if(targetFormObj.expiry[0].value == "" || targetFormObj.expiry[1].value == ""){
+         alert('카드 유효기간을 작성해주세요');
+         targetFormObj.expiry[0].focus();
+
+         return false;
+    }
+    targetFormObj.number.value = targetFormObj.number.value.replace(/\s/g, '');
+
+    targetFormObj.ExpDate.value = targetFormObj.expiry[1].value + '' + targetFormObj.expiry[0].value;
+    targetFormObj.ValidYear.value = targetFormObj.expiry[1].value;
+    targetFormObj.ValidMonth.value =  targetFormObj.expiry[0].value;
+
+    var selaval = targetFormObj.cert_type.value;
+       //인증거래
+      if(selaval == '0'){
+      if(targetFormObj.card_user_type.value == ""){
+        alert('카드종류를 선택하세요.');
+        targetFormObj.card_user_type.focus();
+
+        return false;
+      }
+      if(targetFormObj.password.value == ""){
+        alert('암호(2자리)를 입력하세요.');
+        targetFormObj.password.focus();
+
+        return false;
+         }
+         if(targetFormObj.auth_value.value == ""){
+        alert('인증값을 입력하세요.');
+        targetFormObj.auth_value.focus();
+        return false;
+         }
+    }
+       targetFormObj.submit();
+    }
+</script>
+
+<!-- Page Title-->
+<div class="page-title">
+  <div class="container">
+    <div class="column">
+      <h5>신용카드 결제</h5>
+    </div>
+  </div>
+</div>
+<!-- Page Content-->
+<div class="container padding-bottom-3x mb-2">
+  <div class="row">
+    <div class="col-xl-3 col-lg-4">
+      <aside class="sidebar">
+        <div class="padding-top-2x hidden-lg-up"></div>
+        <!-- 결제 정보 위젯-->
+        <section class="widget widget-order-summary">
+          <h3 class="widget-title mb-2">결제정보</h3>
+          <table class="table" id="order_summary_table">
+            <tr>
+              <td class="text-gray-dark" name="product_nm"></td>
+              <td class="text-gray-dark" name="tot_amt">원</td>
+            </tr>
+          </table>
+        </section>
+      </aside>
+    </div>
+    <div class="col-xl-9 col-lg-8">
+      <div class="accordion" id="accordion" role="tablist">
+        <div class="card">
+          <div class="card-header" role="tab">
+            <h6><a class="checkout_form_title" href="#card" data-toggle="collapse"><i class="icon-credit-card"></i>카드정보 입력</a></h6>
+          </div>
+          <div class="collapse show" id="card" data-parent="#accordion" role="tabpanel">
+            <div class="card-body">
+              <p>* 국내 발행 신용카드만 가능합니다.</p>
+              <div class="card-wrapper"></div>
+              <!--신용카드 정보 입력 폼-->
+              <form name=frm1 method="post" class="interactive-credit-card row">
+                <input type='hidden' name="com_tax_amt"    size=10 maxlength=8 tabIndex=5 value='0' readonly><%# 과세 %>
+                   <input type='hidden' name="com_free_amt"    size=10 maxlength=8 tabIndex=5 value='0' readonly><%# 비과세 %>
+                   <input type='hidden' name="com_vat_amt"    size=10 maxlength=8 tabIndex=5 value='0' readonly> <%# 부가세 %>
+                   <input type='hidden' name="cert_type"    size=10 maxlength=8 tabIndex=5 value='0' readonly> <%# 인증여부(이름비번생년월일) %>
+                <input type='hidden' name="ExpDate" value=''>
+                <input type='hidden' name="item_id"   tabIndex=10 value=""> <%# 결제할 아이템 %>
+                <input type='hidden' name="card_user_type" value="0"> <%# 개인 카드  %>
+                <input type='hidden' name="pay_method" value="onoff"> <%# 결제PG %>
+                <input type='hidden' name="product_nm" value=''>
+                <input type='hidden' name="HalbuInfo" value='00'>
+                <input type='hidden' name="ValidYear" value=''> <%#서브밋에서 결정남(유저입력값기반으로)%>
+                <input type='hidden' name="ValidMonth" value=''> <%#서브밋에서 결정남(유저입력값기반으로)%>
+                <div class="form-group col-sm-6">
+                  <label>이름</label>
+                  <input class="form-control" type="text" name="name" required>
+                </div>
+                <div class="form-group col-sm-6" id="EtcCardNum">
+                  <label>카드번호</label>
+                  <input class="form-control" type="text" name="number" maxLength="20" required>
+                </div>
+                <div class="form-group col-sm-6" id="EtcValidDate">
+                  <label for="">유효기간</label>
+                  <div class="row">
+                    <div class="col-sm-6"><input class="valid_date_box form-control" type="text" name="expiry" placeholder="MM" maxLength="2" required></div>
+                    <div class="col-sm-6"><input class="form-control" type="text" name="expiry" placeholder="YY" maxLength="2" required></div>
+                  </div>
+                </div>
+                <div class="form-group col-sm-3" id="EtcPw">
+                  <label>비밀번호 앞 두자리</label>
+                  <input class="form-control" type="password" name="password" maxLength="2" required>
+                </div>
+                <div class="form-group col-sm-3" id="EtcAuthVal">
+                  <label>생년월일</label>
+                  <input class="form-control" type="text" name="auth_value" maxLength="6" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label>전화번호</label>
+                  <input class="form-control" type="text" name="user_phone2" required>
+                </div>
+                <div class="col-sm-6">
+                  <input type="button" value="결제하기" onclick="javascript:checkSubmitValue(document.frm1);" class="btn btn-outline-primary btn-block mt-4">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between paddin-top-1x mt-4"><a class="btn btn-outline-secondary btn-sm" href="#">결제취소</a></div>
+    </div>
+  </div>
+</div>
