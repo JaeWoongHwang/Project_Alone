@@ -6,15 +6,16 @@ class AppsController < ApplicationController
   end
 
   def crawler
-    (2).downto(1) do |c|
-        pageNum = "c"
+    for i in 1..853
+        pageNum = i
     end
 
-    url = "https://m.dhlottery.co.kr/gameResult.do?method=byWin&drwNo="
+    url = "https://m.dhlottery.co.kr/gameResult.do?method=byWin&drwNo=" + pageNum
+  
     doc = Nokogiri::HTML(open(url))
-    @values = doc.css('.bx_lotto_winnum')
-    @values.each do |x|
-      getNum = x.css('.ball').text.strip
+    @values = doc.css('.contents > .bx_lotto_winnum > span')
+    @values.each do |v|
+      getNum = v.css('.ball').text.strip
       @res = App.new(winNum:getNum)
       @res.save
     end
