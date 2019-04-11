@@ -1,17 +1,6 @@
 <h3>Data Table</h3>
-<table>
-    <thead>
-        <tr>
-            <td>Number</td>
-        </tr>
-    </thead>
-    <tbody>
-     <%@data.each do |d| %>
-        <tr>
-            <td>
-                <%=d.winNum%>
-            </td>
-        </tr>
+<div>
+    <%for i in 0 ... @ranking.size%>
+        <%=@ranking[i][:rank]%> rank: <%=@ranking[i][:keyword]%><br>
     <%end%>
-    </tbody>
-</table>
+</div>

@@ -1,0 +1,17 @@
+<h3>Data Table</h3>
+<table>
+    <thead>
+        <tr>
+            <td>Number</td>
+        </tr>
+    </thead>
+    <tbody>
+     <%@app.each do |d| %>
+        <tr>
+            <td>
+                <%=d.winNum%>
+            </td>
+        </tr>
+    <%end%>
+    </tbody>
+</table>
