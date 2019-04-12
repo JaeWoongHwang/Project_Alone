@@ -1,2 +1,7 @@
 <h1>Home#crawler</h1>
-<p>Find me in app/views/home/crawler.html.erb</p>
+
+<div>
+    <%for i in 0 ... @number.size%>
+        <%=@number[i][:num]%>
+    <%end%>
+</div>
