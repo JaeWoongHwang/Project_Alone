@@ -1,13 +1,15 @@
 <h1>Home#crawler</h1>
 
 <div>
+    Round : <%=@round%><br/>
+    
     <%for i in 0 ... @number.size%>
-        <%=@number[i][:num1]%><br/>
-        <%=@number[i][:num2]%><br/>
-        <%=@number[i][:num3]%><br/>
-        <%=@number[i][:num4]%><br/>
-        <%=@number[i][:num5]%><br/>
-        <%=@number[i][:num6]%><br/>
-        <%=@number[i][:num8]%><br/>
+        First Number : <%=@number[i][:num1]%><br/>
+        Second Number : <%=@number[i][:num2]%><br/>
+        Third Number : <%=@number[i][:num3]%><br/>
+        Fourth Number : <%=@number[i][:num4]%><br/>
+        Fifth Number : <%=@number[i][:num5]%><br/>
+        Sixth Number : <%=@number[i][:num6]%><br/>
+        Bonus Number : <%=@number[i][:bonusNum]%><br/>
     <%end%>
 </div>
