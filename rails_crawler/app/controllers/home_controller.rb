@@ -5,7 +5,10 @@ class HomeController < ApplicationController
     @number = []
     @round = []
     doc = Nokogiri::HTML(open("https://m.dhlottery.co.kr/gameResult.do?method=byWin&drwNo=853"))
-    @round << {info:doc.css(".contents .wrap_select #dwrNoList option[type=selected]").text}
+    @round << {
+      info:doc.css(".contents .search_area .wrap_select #dwrNoList")["option:selected"]
+    }
+    # @round << {info:doc.xpath('//div[@class="contents"]/div[@id="dwrNoList"]/option').first}
 
     doc.css(".contents .bx_lotto_winnum").each do |element|
       @number << {
